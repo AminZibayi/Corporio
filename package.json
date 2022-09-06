@@ -1,6 +1,6 @@
 {
-  "name": "@hyas/core",
-  "description": "Hyas core",
+  "name": "corporio",
+  "description": "Corporio Hugo Theme",
   "version": "1.5.8",
   "engines": {
     "node": ">=16.16.0"
@@ -8,10 +8,13 @@
   "browserslist": [
     "defaults"
   ],
-  "repository": "https://github.com/h-enk/hyas",
+  "repository": "https://github.com/AminZibayi/Corporio",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
+  },
+  "author": {
+    "name": "Amin Zibayi"
   },
   "scripts": {
     "init": "shx rm -rf .git && git init -b main",
