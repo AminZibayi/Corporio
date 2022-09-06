@@ -1,0 +1,38 @@
+name: Corporio
+license: MIT
+licenselink: "https://github.com/AminZibayi/Corporio/blob/master/LICENSE"
+description: >-
+  Enterprise level corporation website leveraging latest technologies making it
+  secure, fast, and SEO-ready — by default.
+homepage: "https://github.com/AminZibayi/Corporio"
+tags:
+  - landing page
+  - blog
+  - products
+  - ecommerce
+  - company
+  - corporation
+  - enterprise
+  - minimal
+  - modern
+  - customizable
+  - bootstrap
+  - responsive
+  - business
+  - google analytics
+  - contact form
+features:
+  - secure
+  - fast
+  - seo-ready
+  - responsive
+  - contact-form
+  - blog
+  - performant
+  - bootstrap
+  - netlify-ready
+
+min_version: 0.75.0
+author:
+  name: Amin Zibayi
+  homepage: "https://github.com/AminZibayi"
