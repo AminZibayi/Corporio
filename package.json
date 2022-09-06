@@ -19,6 +19,7 @@
   "scripts": {
     "init": "shx rm -rf .git && git init -b main",
     "create": "exec-bin node_modules/.bin/hugo/hugo new",
+    "prepare": "husky install",
     "prestart": "npm run clean",
     "start": "exec-bin node_modules/.bin/hugo/hugo server  --bind=0.0.0.0 --disableFastRender --baseURL=http://localhost",
     "start:lan": "exec-bin node_modules/.bin/hugo/hugo server --bind=0.0.0.0 --baseURL=http://192.168.1.10 --port=1313",
@@ -65,9 +66,17 @@
     "quicklink": "^2.2.0",
     "shx": "^0.3",
     "stylelint": "^14.9",
-    "stylelint-config-standard-scss": "^4.0"
+    "stylelint-config-standard-scss": "^4.0",
+    "@commitlint/cli": "^17.0.2",
+    "@commitlint/config-conventional": "^17.0.2",
+    "husky": "^8.0.1"
   },
   "otherDependencies": {
     "hugo": "0.101.0"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   }
 }
