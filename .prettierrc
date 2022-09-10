@@ -1,7 +1,16 @@
 {
+  "plugins": ["prettier-plugin-go-template"],
   "bracketSameLine": true,
   "trailingComma": "es5",
   "jsxSingleQuote": true,
   "printWidth": 120,
-  "semi": true
+  "semi": true,
+  "overrides": [
+    {
+      "files": ["*.html"],
+      "options": {
+        "parser": "go-template"
+      }
+    }
+  ]
 }
