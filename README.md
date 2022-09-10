@@ -36,78 +36,97 @@
 
 ![Hyas — Modern Hugo Starter](https://raw.githubusercontent.com/h-enk/hyas/master/images/tn.png)
 
+- [Demo](#demo)
+- [Why Corporio?](#why-corporio)
+- [Requirements](#requirements)
+- [Get Started](#get-started)
+  - [Standalone Website](#standalone-website)
+    - [1. Create a new site](#1-create-a-new-site)
+    - [2. Install dependencies](#2-install-dependencies)
+    - [3. Start development server](#3-start-development-server)
+  - [As a Theme](#as-a-theme)
+    - [1. Create a new site](#1-create-a-new-site-1)
+    - [2. Install dependencies](#2-install-dependencies-1)
+    - [3. Configure website](#3-configure-website)
+- [Other commands](#other-commands)
+- [Documentation](#documentation)
+- [Communities](#communities)
+
 ## Demo
 
 - [hyas.netlify.app](https://hyas.netlify.app/)
 
-## Why Hyas?
+## Why Corporio?
 
-Six reasons why you should use Hyas:
+Six reasons why you should use Corporio:
 
-1. __Security aware__. Get A+ scores on [Mozilla Observatory](https://observatory.mozilla.org/analyze/hyas.netlify.app) out of the box. Easily change the default Security Headers to suit your needs.
-
-2. __Fast by default__. Get 100 scores on [Google Lighthouse](https://googlechrome.github.io/lighthouse/viewer/?gist=bc1047434376aa5b3e50cf637f8a5b40) by default. Hyas removes unused css, prefetches links, and lazy loads images.
-
-3. __SEO-ready__. Use sensible defaults for structured data, open graph, and Twitter cards. Or easily change the SEO settings to your liking.
-
-4. __Development tools__. Code with confidence. Check styles, scripts, and markdown for errors and fix automatically or manually.
-
-5. __Bootstrap framework__. Build robust, flexible, and intuitive websites with Bootstrap. Or use any other front-end framework if you prefer.
-
-6. __Netlify-ready__. Deploy to Netlify with sensible defaults. Easily use Netlify Functions, Netlify Redirects, and Netlify Headers.
+1. **Security aware**. Get A+ scores on [Mozilla Observatory](https://observatory.mozilla.org/analyze/hyas.netlify.app) out of the box. Easily change the default Security Headers to suit your needs.
+2. **Fast by default**. Get 100 scores on [Google Lighthouse](https://googlechrome.github.io/lighthouse/viewer/?gist=bc1047434376aa5b3e50cf637f8a5b40) by default. Corporio removes unused css, prefetches links, and lazy loads images.
+3. **SEO-ready**. Use sensible defaults for structured data, open graph, and Twitter cards. Or easily change the SEO settings to your liking.
+4. **Development tools**. Code with confidence. Check styles, scripts, and markdown for errors and fix automatically or manually.
+5. **Bootstrap framework**. Build robust, flexible, and intuitive websites with Bootstrap. Or use any other front-end framework if you prefer.
+6. **Netlify-ready**. Deploy to Netlify with sensible defaults. Easily use Netlify Functions, Netlify Redirects, and Netlify Headers.
 
 ## Requirements
 
 - [Git](https://git-scm.com/) — latest source release
-- [Node.js](https://nodejs.org/) — latest LTS version or newer
+- [Node.js](https://nodejs.org/) — latest LTS version
 
-## Get started
+## Get Started
 
-Start a new Hyas project in three steps:
+Start a new Corporio themed site in two ways either as a theme or as a standalone website
+Please note that it is recommended to use PNPM however you may also use NPM or Yarn, but they are not guaranteed to work.
 
-### 1. Create a new site
+### Standalone Website
+
+#### 1. Create a new site
 
 ```bash
-git clone https://github.com/h-enk/hyas.git my-hyas-site && cd my-hyas-site
+git clone https://github.com/AminZibayi/Corporio.git my-corporio-site && cd my-corporio-site
 ```
 
-### 2. Install dependencies
+#### 2. Install dependencies
 
 ```bash
 npm install
+# OR
+pnpm install
 ```
 
-### 3. Start development server
+#### 3. Start development server
 
 ```bash
 npm run start
+# OR
+pnpm start
 ```
+
+### As a Theme
+
+#### 1. Create a new site
+
+```bash
+git submodule add https://github.com/AminZibayi/Corporio.git themes/corporio
+```
+
+#### 2. Install dependencies
+
+```bash
+cd /themes/corporio && pnpm install
+```
+
+#### 3. Configure website
+
+Add `theme: "corporio"` to your website config file.
 
 ## Other commands
 
-Hyas comes with [commands](https://gethyas.com/docs/prologue/commands/) for common tasks.
+_TODO_
 
 ## Documentation
 
-- [Netlify](https://docs.netlify.com/)
-- [Hugo](https://gohugo.io/documentation/)
-- [Hyas](https://gethyas.com/)
+_TODO_
 
 ## Communities
 
-- [Netlify Community](https://community.netlify.com/)
-- [Hugo Forums](https://discourse.gohugo.io/)
-- [Hyas Discussions](https://github.com/h-enk/hyas/discussions)
-
-## Sponsors
-
-Support this project by becoming a sponsor. Your logo will show up here with a link to your website.
-
-[![OC sponsor 0](https://opencollective.com/hyas/tiers/sponsor/0/avatar.svg)](https://opencollective.com/hyas/tiers/sponsor/0/website)
-[![OC sponsor 1](https://opencollective.com/hyas/tiers/sponsor/1/avatar.svg)](https://opencollective.com/hyas/tiers/sponsor/1/website)
-
-## Backers
-
-Support this project by becoming a backer. Your avatar will show up here.
-
-[![Backers](https://opencollective.com/hyas/tiers/backer.svg)](https://opencollective.com/hyas)
+_TODO_
