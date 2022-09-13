@@ -47,7 +47,7 @@
   "dependencies": {
     "lazysizes": "^5.3",
     "quicklink": "^2.2.0",
-    "bootstrap": "^5.2.0-beta1"
+    "bootstrap": "^4.6.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.18",
