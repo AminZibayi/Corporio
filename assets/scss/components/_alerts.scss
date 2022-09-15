@@ -1,33 +1,25 @@
-.alert {
-  font-size: $font-size-sm;
-}
-
-@include media-breakpoint-up(md) {
-  .alert {
-    font-size: $font-size-base;
-  }
-}
+// In the Name of God, the Originator the Creative
 
 .alert .alert-link {
   text-decoration: underline;
 }
 
 .alert-dark {
-  color: $gray-100;
-  background-color: $gray-900;
+  color: #fefefe;
+  background-color: #111;
 }
 
 .alert-dark .alert-link {
-  color: $gray-100;
+  color: #fefefe;
 }
 
 .alert-primary {
-  color: $gray-100;
+  color: #fefefe;
   background-color: $primary;
 }
 
 .alert-primary .alert-link {
-  color: $gray-100;
+  color: #fefefe;
 }
 
 .alert .alert-link:hover,
