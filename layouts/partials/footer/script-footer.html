@@ -1,14 +1,18 @@
 {{ partial "footer/esbuild" (dict "src" "js/bootstrap.js" "load" "async" "transpile" false) -}}
 {{ partial "footer/esbuild" (dict "src" "js/app.js" "targetPath" "main.js" "load" "async" "transpile" false) -}}
+{{ if eq .Type "contact" }}
+  <script src="https://maps.googleapis.com/maps/api/js?key={{ .Site.Params.map.APIkey }}&libraries=geometry" async />
+{{ end }}
 
 {{/* EXAMPLE - only load script for production
-{{ if eq (hugo.Environment) "production" -}}
-  {{ partial "footer/esbuild" (dict "src" "js/instantpage.js" "load" "async" "transpile" false) -}}
-{{ end -}}
+  {{ if eq (hugo.Environment) "production"
+-}}
+{{ partial "footer/esbuild" (dict "src" "js/instantpage.js" "load" "async" "transpile" false) -}}
+{{ en d -}}
 */}}
-
 {{/* EXAMPLE - only load script for a page type e.g. contact or gallery
-{{ if eq .Type "gallery" }}
-  {{ partial "footer/esbuild" (dict "src" "js/gallery.js" "load" "async" "transpile" false) -}}
-{{ end }}
+  {{ if eq .Type "gallery"
+}}
+{{ partial "footer/esbuild" (dict "src" "js/gallery.js" "load" "async" "transpile" false) -}}
+{{ en d }}
 */}}
