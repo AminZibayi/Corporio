@@ -2,6 +2,11 @@
 
 @import "bootstrap/scss/functions";
 @import "bootstrap/scss/bootstrap";
+@import "magnific-popup/src/css/main";
+// TODO: Use SVG icons instead of web fonts to reduce page size
+@import "@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "slick-carousel/slick/slick-theme.scss";
+@import "slick-carousel/slick/slick.scss";
 
 @import "variables";
 @import "typography";
