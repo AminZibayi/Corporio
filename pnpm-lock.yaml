@@ -6,6 +6,7 @@ specifiers:
   "@babel/preset-env": ^7.18
   "@commitlint/cli": ^17.0.2
   "@commitlint/config-conventional": ^17.0.2
+  "@fortawesome/fontawesome-free": ^6.2.0
   "@fullhuman/postcss-purgecss": ^4.1
   "@hyas/images": ^0.2.1
   "@popperjs/core": ^2.11
@@ -16,7 +17,9 @@ specifiers:
   exec-bin: ^1.0.0
   hugo-installer: ^3.1
   husky: ^8.0.1
+  jquery: ^3.6.1
   lazysizes: ^5.3
+  magnific-popup: github:dimsemenov/Magnific-Popup
   markdownlint-cli2: ^0.5.1
   netlify-plugin-submit-sitemap: ^0.4.0
   postcss: ^8.4
@@ -27,14 +30,19 @@ specifiers:
   purgecss-whitelister: ^2.4
   quicklink: ^2.2.0
   shx: ^0.3
+  slick-carousel: ^1.8.1
   stylelint: ^14.11.0
   stylelint-config-prettier: ^9.0.3
   stylelint-config-standard-scss: ^4.0
 
 dependencies:
+  "@fortawesome/fontawesome-free": 6.2.0
   bootstrap: 4.6.2_47tpum6wtjtozdoo6t4hr5iro4
+  jquery: 3.6.1
   lazysizes: 5.3.2
+  magnific-popup: github.com/dimsemenov/Magnific-Popup/c5cbb783456b720886162a4358a1c93739cd346e
   quicklink: 2.3.0_wcqkhtmu7mswc6yz4uyexck3ty
+  slick-carousel: 1.8.1_jquery@3.6.1
 
 devDependencies:
   "@babel/cli": 7.18.10_@babel+core@7.19.0
@@ -1552,6 +1560,13 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  /@fortawesome/fontawesome-free/6.2.0:
+    resolution:
+      { integrity: sha512-CNR7qRIfCwWHNN7FnKUniva94edPdyQzil/zCwk3v6k4R6rR2Fr8i4s3PM7n/lyfPA6Zfko9z5WDzFxG9SW1uQ== }
+    engines: { node: ">=6" }
+    requiresBuild: true
+    dev: false
 
   /@fullhuman/postcss-purgecss/4.1.3_postcss@8.4.16:
     resolution:
@@ -4834,6 +4849,15 @@ packages:
       is-fullwidth-code-point: 3.0.0
     dev: true
 
+  /slick-carousel/1.8.1_jquery@3.6.1:
+    resolution:
+      { integrity: sha512-XB9Ftrf2EEKfzoQXt3Nitrt/IPbT+f1fgqBdoxO3W/+JYvtEOW6EgxnWfr9GH6nmULv7Y2tPmEX3koxThVmebA== }
+    peerDependencies:
+      jquery: ">=1.8.0"
+    dependencies:
+      jquery: 3.6.1
+    dev: false
+
   /source-map-js/1.0.2:
     resolution:
       { integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw== }
@@ -5613,3 +5637,11 @@ packages:
       { integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q== }
     engines: { node: ">=10" }
     dev: true
+
+  github.com/dimsemenov/Magnific-Popup/c5cbb783456b720886162a4358a1c93739cd346e:
+    resolution:
+      { tarball: https://codeload.github.com/dimsemenov/Magnific-Popup/tar.gz/c5cbb783456b720886162a4358a1c93739cd346e }
+    name: magnific-popup
+    version: 1.1.0
+    engines: { node: ">= 0.8.0" }
+    dev: false
