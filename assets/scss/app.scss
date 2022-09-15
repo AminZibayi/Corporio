@@ -1,25 +1,28 @@
-/** Import Bootstrap functions */
+// In the Name of God, the Originator the Creative
+
 @import "bootstrap/scss/functions";
-
-/** Import theme variables */
-@import "common/variables";
-
-/** Import Bootstrap */
 @import "bootstrap/scss/bootstrap";
 
-/** Import theme styles */
-@import "common/fonts";
-@import "common/global";
-@import "components/alerts";
-@import "components/buttons";
-@import "components/code";
+@import "variables";
+@import "typography";
+@import "mixins";
+@import "buttons";
+@import "common";
 
-// @import "components/syntax";
-@import "components/comments";
-@import "components/forms";
-@import "components/images";
-@import "layouts/footer";
-@import "layouts/header";
-@import "layouts/pages";
-@import "layouts/posts";
-@import "layouts/sidebar";
+@import "components/alerts";
+@import "components/preloder";
+@import "components/navbar";
+@import "components/hero-section";
+@import "components/about-section";
+@import "components/service-section";
+@import "components/product-section";
+@import "components/resume-section";
+@import "components/skill-section";
+@import "components/testimonial-section";
+@import "components/blog-section";
+@import "components/footer-section";
+@import "components/blog";
+@import "components/single-blog-post";
+@import "components/page-title";
+@import "components/contact";
+@import "components/case_details";

@@ -1,0 +1,42 @@
+// In the Name of God, the Originator the Creative
+
+// .btn {
+//   transition: all 0.3s ease;
+//   padding: 20px 50px;
+//   border-radius: 7px;
+//   &:hover {
+//     box-shadow: 0 8px 20px rgba(56, 87, 241, 0.3);
+//     transform: scale(1.03);
+//   }
+// }
+
+// Button Override
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 7px;
+  @include mobile {
+    padding: 12px 20px;
+  }
+}
+
+.btn-lg {
+  padding: 20px 50px;
+}
+
+.btn-light {
+  color: $primary;
+  &:hover {
+    color: $primary;
+  }
+}
+
+.btn-zoom {
+  transition: all 0.3s ease;
+  transform: scale(1);
+  &:hover {
+    box-shadow: 0 8px 20px rgba(56, 87, 241, 30%);
+    transform: scale(1.03);
+  }
+}

@@ -1,0 +1,51 @@
+.contact__info {
+  &_item {
+    box-shadow: 0 20px 40px 0 rgba(50, 65, 141, 12%);
+    padding: 50px 40px;
+    border-radius: 20px;
+    &-icon {
+      height: 110px;
+      width: 125px;
+      position: relative;
+      margin-bottom: 35px;
+      .icon-background {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      .icon {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+      }
+    }
+    a {
+      color: $body-color;
+      text-decoration: underline;
+    }
+  }
+}
+.contact-form {
+  padding: 50px 0 100px;
+  &-input {
+    .form-group {
+      margin-bottom: 30px;
+    }
+  }
+  #map {
+    border-radius: 30px;
+    height: 100%;
+    @include desktop {
+      height: 400px;
+      margin-top: 60px;
+    }
+  }
+  &-generator {
+    p,
+    a,
+    strong {
+      font-size: 13px;
+    }
+  }
+}

@@ -1,0 +1,137 @@
+.case-details {
+  padding: 200px 0 100px;
+  .svg-img {
+    position: absolute;
+    top: 30%;
+    left: -7%;
+    animation: move_top 5s infinite linear;
+    @include desktop {
+      display: none;
+    }
+  }
+  .animate-shape {
+    position: absolute;
+    top: 29%;
+    right: 4%;
+    height: 300px;
+    width: 300px;
+    svg {
+      width: 100%;
+    }
+    @include desktop {
+      display: none;
+    }
+  }
+  .animate-pattern {
+    position: absolute;
+    top: 46%;
+    right: 12%;
+    height: 100px;
+    width: 100px;
+    animation: move_top 3s infinite linear;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+    @include desktop {
+      display: none;
+    }
+  }
+  &-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: $secondary;
+    border-radius: 20px;
+    padding: 30px 20px;
+    margin: 70px 0 80px;
+    @include mobile {
+      flex-direction: column;
+      padding: 30px 0;
+    }
+    .case-details-info-item {
+      position: relative;
+      width: 33.3%;
+      padding: 10px 0;
+      @include tablet {
+        width: 50%;
+      }
+      @include mobile {
+        width: 100%;
+        padding: 0;
+      }
+      &:not(:last-child) {
+        // &::before {
+        //   position: absolute;
+        //   content: "";
+        //   width: 1px;
+        //   height: 100%;
+        //   top: 0;
+        //   right: 0;
+        //   background: rgba($color: $white, $alpha: 0.1);
+        //   @include mobile {
+        //     display: none;
+        //   }
+        // }
+        @include mobile {
+          margin-bottom: 30px;
+        }
+      }
+    }
+    h5 {
+      color: $light;
+    }
+    p {
+      margin: 0;
+    }
+  }
+  &-thumb {
+    border-radius: 30px;
+    overflow: hidden;
+    img {
+      height: 100%;
+      max-width: 100%;
+      border-radius: 20px;
+    }
+  }
+  &-nav {
+    .previous,
+    .next {
+      .icon {
+        line-height: 0;
+      }
+      .content {
+        span {
+          display: block;
+        }
+        h5 {
+          font-size: 20px;
+          margin: 0;
+        }
+      }
+    }
+
+    .social {
+      @include mobile {
+        display: none;
+      }
+      ul {
+        li {
+          list-style: none;
+          display: inline-block;
+          a {
+            color: $body-color;
+            display: block;
+            transition: all 0.3s ease;
+            &:hover {
+              color: $primary;
+            }
+          }
+          &:not(:last-child) {
+            margin-right: 25px;
+          }
+        }
+      }
+    }
+  }
+}

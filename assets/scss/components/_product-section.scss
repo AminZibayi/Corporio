@@ -1,0 +1,83 @@
+// In the Name of Allah, the Merciful the Compassionate
+
+.product {
+  padding: 100px 0 135px;
+  @include desktop {
+    padding: 100px 0;
+  }
+  &-item {
+    width: 50%;
+    padding: 30px;
+    @include tablet {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+    &:nth-child(4n) {
+      padding-left: 70px;
+      @include tablet {
+        padding-left: 0;
+      }
+    }
+    &:nth-child(4n-3) {
+      padding-right: 70px;
+      @include tablet {
+        padding-right: 0;
+      }
+    }
+
+    // &:not(:last-child) {
+    //   margin-bottom: 40px;
+    // }
+    &-grid {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &-thumb {
+      transition: 0.3s ease;
+      border-radius: 20px;
+      width: 100%;
+    }
+    &-content {
+      span {
+        color: #7e7e8a;
+        font-size: 18px;
+        line-height: 1;
+        display: block;
+        margin: 28px 0 20px;
+      }
+      .see-more-btn {
+        display: inline-block;
+        color: $primary;
+        position: relative;
+        margin: 0 0 0 30px;
+        transform: scaleY(0);
+        transform-origin: bottom center;
+        transition: all 0.3s ease;
+        &::before {
+          position: absolute;
+          content: "";
+          height: 2px;
+          width: 20px;
+          background: $primary;
+          top: 50%;
+          left: -30px;
+          transform: translateY(-50%);
+        }
+        @include tablet {
+          transform: scaleY(1);
+        }
+      }
+    }
+    &:hover {
+      .product-item-thumb {
+        box-shadow: 0 20px 40px 0 rgba(50, 65, 141, 12%);
+      }
+      .product-item-content {
+        .see-more-btn {
+          transform: scaleY(1);
+        }
+      }
+    }
+  }
+}

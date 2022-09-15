@@ -1,0 +1,66 @@
+.breadCrumb {
+  padding: 200px 0 0;
+  position: relative;
+  .svg-img {
+    position: absolute;
+    bottom: -35%;
+    left: -7%;
+    animation: move_top 5s infinite linear;
+    @include desktop {
+      display: none;
+    }
+  }
+  .animate-shape {
+    position: absolute;
+    bottom: -60%;
+    right: 2%;
+    height: 300px;
+    width: 300px;
+    svg {
+      width: 100%;
+    }
+    @include desktop {
+      display: none;
+    }
+  }
+  .animate-pattern {
+    position: absolute;
+    bottom: -40%;
+    right: 10%;
+    height: 100px;
+    width: 100px;
+    animation: move_top 3s infinite linear;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+    @include desktop {
+      display: none;
+    }
+  }
+  @include desktop {
+    padding: 120px 0 0;
+  }
+  &__title {
+    font-size: 48px;
+    line-height: 1;
+    margin: 0 0 30px;
+  }
+  .breadcrumb {
+    background: none;
+    margin: 0;
+    padding: 0;
+    &-item {
+      a {
+        color: $secondary;
+        text-decoration: none;
+      }
+      &.active {
+        color: $secondary;
+      }
+    }
+  }
+  .breadcrumb-item + .breadcrumb-item::before {
+    content: "-";
+  }
+}
