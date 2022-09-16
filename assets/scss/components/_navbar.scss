@@ -20,7 +20,7 @@
   &.nav__color__change {
     background: $white;
     padding: 20px 0;
-    box-shadow: 0 10px 20px 0 rgba(50, 65, 141, 10%);
+    box-shadow: 0 10px 20px 0 rgba(50, 65, 141, 0.1);
     @include desktop {
       padding: 15px 20px;
     }

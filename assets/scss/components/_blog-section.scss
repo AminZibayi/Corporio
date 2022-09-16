@@ -58,7 +58,7 @@
       left: 40px;
       padding: 30px;
       border-radius: 20px;
-      box-shadow: 0 20px 40px 0 rgba(50, 65, 141, 12%);
+      box-shadow: 0 20px 40px 0 rgba(50, 65, 141, 0.12);
       @include desktop {
         left: 0;
       }
