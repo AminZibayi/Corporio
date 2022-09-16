@@ -1,0 +1,37 @@
+{{ if .Site.Params.alert -}}
+  {{ partial "header/alert.html" . }}
+{{ end -}}
+
+
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a href="{{ .Site.BaseURL }}" class="navbar-brand">
+      {{ $asset := resources.Get .Site.Params.logo }}
+      {{ $img := $asset.Fit "600x200 webp" }}
+      <img style="width: 150px; height: 50px; object-fit: contain" src="{{ $img.RelPermalink }}" alt="site-logo" />
+    </a>
+    <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+      <ul class="nav navbar-nav main-navigation my-0 mx-auto">
+        {{ $menu := .Site.Menus.main }}
+        {{ range $index, $element := $menu }}
+          <li class="nav-item">
+            <a
+              href="{{ $.Site.BaseURL }}{{ .URL }}"
+              class="nav-link text-dark text-sm-center p-2 {{ if $.IsHome }}scroll{{ end }}"
+              >{{ .Name }}</a
+            >
+          </li>
+        {{ end }}
+      </ul>
+      <div class="navbar-nav">
+        <a href="{{ "contact" | absURL }}" class="btn btn-primary btn-zoom hire_button">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</nav>
