@@ -45,13 +45,15 @@
     "version": "auto-changelog -p && git add CHANGELOG.md"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.2.0",
     "bootstrap": "^4.6.2",
+    "gsap": "1.20.5",
+    "imagesloaded": "^5.0.0",
     "jquery": "^3.6.1",
     "lazysizes": "^5.3",
     "magnific-popup": "github:dimsemenov/Magnific-Popup",
     "quicklink": "^2.2.0",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "waypoints": "^4.0.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.18",
