@@ -5,4 +5,6 @@
 {{ $domainParts := split $domain "." -}}
 {{ $domainName := (index $domainParts 0) -}}
 {{ $domainExtension := (index $domainParts 1) -}}
-<script type="text/javascript" nonce="dXNlcj0iaGVsbG8iLGRvbWFpbj0iaGVua3ZlcmxpbmRlLmNvbSIsZG9jdW1lbnQud3JpdGUodXNlcisiQCIrZG9tYWluKTs=">userName="{{ $userName }}",domainName="{{ $domainName  }}",domainExtension="{{ $domainExtension }}",document.write("<a href='mailto:"+userName+"@"+domainName+"."+domainExtension+"'>{{ if ne .emailTitle $address}}{{ .emailTitle | safeHTML }}{{else}}"+userName+"@"+domainName+"."+domainExtension+"{{end}}</a>");</script><noscript>{{ $userName }} at {{ $domainName }} dot {{ $domainExtension  }}</noscript>
+<script type="text/javascript" nonce="dXNlcj0iaGVsbG8iLGRvbWFpbj0iaGVua3ZlcmxpbmRlLmNvbSIsZG9jdW1lbnQud3JpdGUodXNlcisiQCIrZG9tYWluKTs=">userName="{{ $userName }}",domainName="{{ $domainName  }}",domainExtension="{{ $domainExtension }}",document.write("<a href='mailto:"+userName+"@"+domainName+"."+domainExtension+"'>{{ if ne .emailTitle $address}}{{ .emailTitle | safeHTML }}{{else}}"+userName+"@"+domainName+"."+domainExtension+"{{end}}</a>");</script><noscript
+  >{{ $userName }} at {{ $domainName }} dot {{ $domainExtension }}</noscript
+>

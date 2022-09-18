@@ -1,3 +1,4 @@
+{{/* prettier-ignore-start */}}
 {{- /* ESBUILD.HTML - Build javascript modules with esbuild
   * Simple Usage: {{ partial "esbuild" "js/file.js" }}
   * Simple Usage: {{ partial "esbuild" (dict "src" "js/file.js" "load" "defer/async" "babel" true ) }}
@@ -12,9 +13,9 @@
   * https://esbuild.github.io/content-types/#javascript
   *
   * example for checking hugo env from js file
-  * 
+  *
   * import * as params from '@params';
-  * 
+  *
   * if (params.env === 'development') {
   *   console.log('hugo deveolopment environment')
   * } else {
@@ -22,10 +23,11 @@
   * }
   *
   * ----------------------------------------------------------------*/ -}}
+{{/* prettier-ignore-end */}}
 {{- /* get source from . or .src and fetch resource */ -}}
 {{- $src := . -}}
 {{- if not $src -}}
-{{- errorf `You must provide a source as the partial context, or (dict .src "path")` -}}
+  {{- errorf `You must provide a source as the partial context, or (dict .src "path")` -}}
 {{- end -}}
 {{- /* set .load only if valid option provided in dict */ -}}
 {{- $load := "" -}}
@@ -33,31 +35,31 @@
 {{- $babel := false -}}
 {{- /* check for dict */ -}}
 {{- if reflect.IsMap . -}}
-{{- with .src -}}
-{{- $src = . -}}
-{{- else -}}
-{{- errorf "as you are providing params as a dict, you must provide the source file as .src" -}}
-{{- end -}}
-{{- with .load -}}
-{{- $loadOpts := slice "async" "defer" -}}
-{{- if not (in $loadOpts . ) -}}
-  {{- errorf "Invalid .load %q for file /assets/%s - valid options are %s." . $src (delimit $loadOpts ", " " and " ) -}}
-{{- end -}}
-{{- $load = . }}
-{{- end -}}
-{{- with .babel -}}
-{{- if eq . true -}}
-  {{- $babel = true -}}
-{{- else -}}
-  {{- errorf "Invalid .babel option of %q. The only valid option is true" . -}}
-{{- end -}}
-{{- end -}}
+  {{- with .src -}}
+    {{- $src = . -}}
+  {{- else -}}
+    {{- errorf "as you are providing params as a dict, you must provide the source file as .src" -}}
+  {{- end -}}
+  {{- with .load -}}
+    {{- $loadOpts := slice "async" "defer" -}}
+    {{- if not (in $loadOpts . ) -}}
+      {{- errorf "Invalid .load %q for file /assets/%s - valid options are %s." . $src (delimit $loadOpts ", " " and " ) -}}
+    {{- end -}}
+    {{- $load = . }}
+  {{- end -}}
+  {{- with .babel -}}
+    {{- if eq . true -}}
+      {{- $babel = true -}}
+    {{- else -}}
+      {{- errorf "Invalid .babel option of %q. The only valid option is true" . -}}
+    {{- end -}}
+  {{- end -}}
 {{ end }}
 {{- /* get the resource from .src path */ -}}
 {{- $resource := resources.Get $src -}}
 {{- /* if resources.Get fails */ -}}
 {{- if not $resource }}
-{{- errorf "No js resource found at /assets/%s" $src -}}
+  {{- errorf "No js resource found at /assets/%s" $src -}}
 {{- end -}}
 {{- /* pass hugo env to the js file as a param */ -}}
 {{- $params := (dict "env" hugo.Environment) -}}
@@ -66,14 +68,13 @@
 {{- $js := $resource | js.Build $jsConfig | fingerprint -}}
 {{- /* is .babelEs6 is set to true - use babel to lower to es6 */ -}}
 {{- if $babel -}}
-{{- $babelConfig := (dict "noComments" true "minified" true "config" "config/babel.module.config.js") -}}
-{{- $js = $resource| js.Build $jsConfig | babel $babelConfig | fingerprint -}}
+  {{- $babelConfig := (dict "noComments" true "minified" true "config" "config/babel.module.config.js") -}}
+  {{- $js = $resource| js.Build $jsConfig | babel $babelConfig | fingerprint -}}
 {{- end -}}
 {{- if eq (hugo.Environment) "development" -}}
-{{- $jsConfig = (dict "sourceMap" "inline" "target" "es2015" "params" $params) -}}
-{{- $js = $resource | js.Build $jsConfig | fingerprint -}}
+  {{- $jsConfig = (dict "sourceMap" "inline" "target" "es2015" "params" $params) -}}
+  {{- $js = $resource | js.Build $jsConfig | fingerprint -}}
 {{ end -}}
 
-<script {{ with $load }}{{ . }}{{ end }} 
-src="{{- $js.RelPermalink -}}"
-integrity="{{- $js.Data.Integrity -}}"></script>
+
+<script {{ with $load }}{{ . }}{{ end }} src="{{- $js.RelPermalink -}}" integrity="{{- $js.Data.Integrity -}}"></script>
