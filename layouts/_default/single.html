@@ -1,10 +1,14 @@
 {{ define "main" }}
-<div class="row justify-content-center">
-  <div class="col-lg-7">
-    <article>
-      <h1>{{ .Title }}</h1>
-      {{ .Content }}
-    </article>
+  <!--
+    TODO: Use a proper default template
+    You may consider using the template used for the blog
+  -->
+  <div class="row justify-content-center">
+    <div class="col-lg-7">
+      <article>
+        <h1>{{ .Title }}</h1>
+        {{ .Content }}
+      </article>
+    </div>
   </div>
-</div>
 {{ end }}

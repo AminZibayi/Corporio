@@ -1,0 +1,36 @@
+{{ with .Site.Data.productSection }}
+  {{ if .enable }}
+    <section class="section product" id="product">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-lg-6 offset-lg-3">
+            <div class="product__header mb-5">
+              <span class="top-title">{{ .topTitle }}</span>
+              {{ .title | markdownify }}
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="product-item-grid">
+              {{ range first 4 (where $.Site.RegularPages "Type" "product") }}
+                <div class="product-item">
+                  {{ $asset := resources.Get .Params.thumbnail }}
+                  {{ $img := $asset.Resize "500x webp" }}
+                  <img src="{{ $img.RelPermalink }}" class="product-item-thumb" alt="product-thumb" />
+                  <div class="product-item-content">
+                    <span>{{ .Params.categories }}</span>
+                    <h3 class="mb-0">
+                      <a class="text-dark" href="{{ .Permalink }}">{{ .Title }}</a>
+                    </h3>
+                    <a class="see-more-btn" href="{{ .Permalink }}">See details</a>
+                  </div>
+                </div>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  {{ end }}
+{{ end }}

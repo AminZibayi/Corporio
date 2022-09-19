@@ -1,0 +1,57 @@
+<!-- In the Name of Allah, the Merciful the Compassionate -->
+
+{{ with .Site.Data.resumeSection }}
+  {{ if .enable }}
+    <section class="section resume" id="resume">
+      <div class="resume__background"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="resume__heading">
+              <div class="text-light">
+                <span class="top-title pre-line">{{ .topTitle }}</span>
+                {{ .title | markdownify }}
+              </div>
+
+              <div class="btn-group nav mt-5">
+                <a href="#{{ .tab1Target }}" class="btn btn-primary active" data-toggle="tab">{{ .tab1Name }}</a>
+                <a href="#{{ .tab2Target }}" class="btn btn-primary" data-toggle="tab">{{ .tab2Name }}</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="tab-content">
+              <div class="resume__education tab-pane active" id="{{ .tab1Target }}">
+                {{ $Section := .education }}
+                {{ range $Section }}
+                  <div class="resume__education_item d-flex flex-nowrap">
+                    <a href="{{ .url }}">
+                      {{ $asset := resources.Get .image }}
+                      {{ $img := $asset.Resize "300x webp" }}
+                      <img alt="certificate" class="resume__education_item_image" src="{{ $img.RelPermalink }}" />
+                    </a>
+                    <div>{{ .content | markdownify }}</div>
+                  </div>
+                {{ end }}
+              </div>
+
+              <div class="resume__education tab-pane" id="{{ .tab2Target }}">
+                {{ $Section := .experience }}
+                {{ range $Section }}
+                  <div class="resume__education_item d-flex flex-nowrap">
+                    <a href="{{ .url }}">
+                      {{ $asset := resources.Get .image }}
+                      {{ $img := $asset.Resize "300x webp" }}
+                      <img class="resume__education_item_image" alt="certificate" src="{{ $img.RelPermalink }}" />
+                    </a>
+                    <div>{{ .content | markdownify }}</div>
+                  </div>
+                {{ end }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  {{ end }}
+{{ end }}
