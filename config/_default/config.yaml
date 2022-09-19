@@ -1,0 +1,57 @@
+# In the Name of God, the Originator the Creative
+
+baseURL: "https://helmani.onrender.com/"
+languageCode: en-us
+disableAliases: true
+disableHugoGeneratorInject: false
+enableEmoji: true
+enableGitInfo: false
+enableRobotsTXT: true
+paginate: 6
+title: Helmani
+rssLimit: 10
+outputs:
+  home:
+    - HTML
+    - RSS
+    - REDIRECTS
+    - HEADERS
+mediaTypes:
+  text/netlify:
+    suffixes:
+      - ""
+    delimiter: ""
+outputFormats:
+  REDIRECTS:
+    mediatype: text/netlify
+    baseName: _redirects
+    isPlainText: true
+    notAlternative: true
+  HEADERS:
+    mediatype: text/netlify
+    baseName: _headers
+    isPlainText: true
+    notAlternative: true
+caches:
+  getjson:
+    dir: ":cacheDir/:project"
+    maxAge: 10s
+sitemap:
+  changefreq: weekly
+  filename: sitemap.xml
+  priority: 0.5
+permalinks:
+  blog: "blog/:title/"
+minify:
+  tdewolff:
+    html:
+      keepWhitespace: false
+related:
+  threshold: 80
+  includeNewer: true
+  toLower: false
+  indices:
+    - name: categories
+      weight: 100
+    - name: date
+      weight: 10
