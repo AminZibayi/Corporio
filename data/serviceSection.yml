@@ -1,0 +1,44 @@
+---
+enable: true
+topTitle: Product Categories
+title: >
+  ## Diversity in Products
+
+  From tasty dried fruits to nutritious nuts and saffron are provided by Helmani.
+service:
+  - content: >
+      #### Pistachios 
+
+      Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod
+      tempor invidunt ut labore et dolore magna aliquyam erat.
+    image: images/service/pistachio.png
+  - content: >
+      #### Raisins
+
+      Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod
+      tempor invidunt ut labore et dolore magna aliquyam erat.
+    image: images/service/raisins.png
+  - content: >
+      #### Dates 
+
+      Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod
+      tempor invidunt ut labore et dolore magna aliquyam erat.
+    image: images/service/dates.png
+  - content: >
+      #### Walnuts
+
+      Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod
+      tempor invidunt ut labore et dolore magna aliquyam erat.
+    image: images/service/walnut.png
+  - content: >
+      #### Saffron
+
+      Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod
+      tempor invidunt ut labore et dolore magna aliquyam erat.
+    image: images/service/saffron.png
+  - content: >
+      #### Barberries
+
+      Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod
+      tempor invidunt ut labore et dolore magna aliquyam erat.
+    image: images/service/barberry.png

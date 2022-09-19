@@ -1,0 +1,21 @@
+# In the Name of Allah, the Merciful the Compassionate
+---
+enable: true
+topTitle: About
+title: >
+  ## Our Story
+
+  Hear our story of struggles of how we became the largest Iranian exporter of premium dried fruits and nuts
+content: >
+  ### We are your strategic partner
+
+  Helmani, founded in 2021, as a well-trusted and well-known Iranian
+  Dried-Fruit and nuts company Manufacturer, We handpick products harvested at their
+  best, always ensuring consistent and premium quality.
+  AHT is proud to have the most satisfied and loyal customers all around the globe.
+  Join us and enjoy our quality goods and services.
+button1Name: Contact Us
+button2Name: Our Products
+button1Target: contact
+button2Target: product
+image: images/about/walnuttree.jpg
