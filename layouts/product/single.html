@@ -36,7 +36,9 @@
             {{ end }}
           </div>
           <div class="case-details-thumb mb-5">
-            <img src="{{ .Params.thumbnail | absURL }}" alt="case-details" />
+            {{ $asset := resources.Get .Params.thumbnail }}
+            {{ $img := $asset.Resize "1000x webp" }}
+            <img src="{{ $img.RelPermalink }}" alt="case-details" />
           </div>
           {{ .Content }}
         </div>
