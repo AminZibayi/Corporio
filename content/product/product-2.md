@@ -1,9 +1,9 @@
 ---
-title: Recipe App Ux Study
-date: 2020-08-12T18:19:35.000+06:00
-thumbnail: images/product/portfolio-3.png
+title: Event App Case Study
+date: 2020-08-12T18:07:16.000+06:00
+thumbnail: images/product/portfolio-2.png
 categories: Web Design, Branding
-client: Clayton Coco
+client: Johnathon Doe
 shortDescription: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
   nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
   voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
