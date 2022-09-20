@@ -7,6 +7,6 @@ module.exports = {
   formatter: "@commitlint/format",
   rules: {
     "type-case": [2, "always", "pascal-case"],
-    "type-enum": [2, "always", ["Docs", "Feat", "Fix", "Refactor", "Test", "Dev", "Clean"]],
+    "type-enum": [2, "always", ["Docs", "Feat", "Fix", "Refactor", "Test", "Dev", "Clean", "Content"]],
   },
 };
