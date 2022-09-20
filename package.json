@@ -46,7 +46,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.6.2",
-    "gsap": "1.20.5",
+    "gsap": "3.11.1",
     "imagesloaded": "^5.0.0",
     "jquery": "^3.6.1",
     "lazysizes": "^5.3",
