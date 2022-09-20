@@ -45,7 +45,7 @@
     "version": "auto-changelog -p && git add CHANGELOG.md"
   },
   "dependencies": {
-    "bootstrap": "^4.6.2",
+    "bootstrap": "^5.2.1",
     "gsap": "1.20.5",
     "imagesloaded": "^5.0.0",
     "jquery": "^3.6.1",
