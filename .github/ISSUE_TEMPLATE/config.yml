@@ -1,4 +1,5 @@
+blank_issues_enabled: false
 contact_links:
   - name: Question 🙋
-    url: https://github.com/h-enk/hyas/discussions/categories/q-a
-    about: Ask your question in Hyas Discussions
+    url: https://github.com/AminZibayi/Corporio/discussions/categories/q-a
+    about: Ask your question in Corporio Discussions
