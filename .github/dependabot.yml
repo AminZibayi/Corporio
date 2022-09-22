@@ -7,7 +7,6 @@ updates:
     schedule:
       interval: "daily"
     commit-message:
-      # Prefix all commit messages with "npm"
       prefix: "Fix(deps):"
       prefix-development: "Dev(deps):"
       include: "scope"
