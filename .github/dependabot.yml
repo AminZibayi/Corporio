@@ -6,6 +6,11 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "daily"
+    commit-message:
+      # Prefix all commit messages with "npm"
+      prefix: "Fix(deps):"
+      prefix-development: "Dev(deps):"
+      include: "scope"
     ignore:
       - dependency-name: "*"
         update-types: ["version-update:semver-major"]
