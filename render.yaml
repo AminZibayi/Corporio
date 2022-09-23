@@ -1,0 +1,54 @@
+# In the Name of God, the Originator the Creative
+
+- type: web
+  name: corporio # Your website name
+  env: static
+  buildCommand: pnpm config set auto-install-peers true; pnpm install; pnpm build
+  staticPublishPath: ./public
+  pullRequestPreviewsEnabled: true # Optional
+  buildFilter:
+    paths:
+      - static/*
+      - layouts/*
+      - data/*
+      - content/*
+      - config/*
+      - assets/*
+      - archetypes/*
+      - package.json
+      - render.yaml
+  headers:
+    - path: public/*
+      name: Strict-Transport-Security
+      value: max-age=31536000; includeSubDomains; preload
+    - path: public/*
+      name: X-Content-Type-Options
+      value: nosniff
+    - path: public/*
+      name: X-XSS-Protection
+      value: 1; mode=block
+    - path: public/*
+      name: Content-Security-Policy
+      value: default-src 'self'; manifest-src 'self'; connect-src 'self'; font-src 'self'; img-src 'self' data:; script-src 'self' 'nonce-dXNlcj0iaGVsbG8iLGRvbWFpbj0iaGVua3ZlcmxpbmRlLmNvbSIsZG9jdW1lbnQud3JpdGUodXNlcisiQCIrZG9tYWluKTs=' 'sha256-aWZ3y/RxbBYKHXH0z8+8ljrHG1mSBvyzSfxSMjBSaXk='; style-src 'self'
+    - path: public/*
+      name: X-Frame-Options
+      value: SAMEORIGIN
+    - path: public/*
+      name: Referrer-Policy
+      value: strict-origin
+    - path: public/*
+      name: Feature-Policy
+      value: geolocation 'self'
+    - path: public/*
+      name: Cache-Control
+      value: public, max-age=31536000
+    - path: public/*
+      name: Access-Control-Allow-Origin
+      value: "*"
+  # routes:
+  #   - type: redirect
+  #     source: /old
+  #     destination: /new
+  #   - type: rewrite
+  #     source: /a/*
+  #     destination: /a
