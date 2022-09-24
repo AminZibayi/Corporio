@@ -19,31 +19,31 @@ services:
         - package.json
         - render.yaml
     headers:
-      - path: public/*
+      - path: /public/*
         name: Strict-Transport-Security
         value: max-age=31536000; includeSubDomains; preload
-      - path: public/*
+      - path: /public/*
         name: X-Content-Type-Options
         value: nosniff
-      - path: public/*
+      - path: /public/*
         name: X-XSS-Protection
         value: 1; mode=block
-      - path: public/*
+      - path: /public/*
         name: Content-Security-Policy
         value: default-src 'self'; manifest-src 'self'; connect-src 'self'; font-src 'self'; img-src 'self' data:; script-src 'self' 'nonce-dXNlcj0iaGVsbG8iLGRvbWFpbj0iaGVua3ZlcmxpbmRlLmNvbSIsZG9jdW1lbnQud3JpdGUodXNlcisiQCIrZG9tYWluKTs=' 'sha256-aWZ3y/RxbBYKHXH0z8+8ljrHG1mSBvyzSfxSMjBSaXk='; style-src 'self'
-      - path: public/*
+      - path: /public/*
         name: X-Frame-Options
         value: SAMEORIGIN
-      - path: public/*
+      - path: /public/*
         name: Referrer-Policy
         value: strict-origin
-      - path: public/*
+      - path: /public/*
         name: Feature-Policy
         value: geolocation 'self'
-      - path: public/*
+      - path: /public/*
         name: Cache-Control
         value: public, max-age=31536000
-      - path: public/*
+      - path: /public/*
         name: Access-Control-Allow-Origin
         value: "*"
     # routes:
