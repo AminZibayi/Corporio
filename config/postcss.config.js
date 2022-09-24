@@ -6,7 +6,7 @@ module.exports = {
   plugins: [
     autoprefixer(),
     purgecss({
-      content: ["./layouts/**/*.html", "./content/**/*.md"],
+      content: ["./hugo_stats.json"],
       safelist: [
         "lazyloaded",
         "table",
