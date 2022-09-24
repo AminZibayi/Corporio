@@ -1,9 +1,8 @@
 // In the Name of God, the Originator the Creative
 
 @import "bootstrap/scss/functions";
-@import "slick-carousel/slick/slick-theme.scss";
-@import "slick-carousel/slick/slick.scss";
-@import "magnific-popup/src/css/main";
+@import "slick";
+@import "magnific-popup";
 
 // TODO: Use SVG icons instead of web fonts to reduce page size
 $fa-font-path: "font-awesome/fonts/";
