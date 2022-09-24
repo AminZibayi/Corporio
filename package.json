@@ -53,6 +53,7 @@
     "magnific-popup": "github:dimsemenov/Magnific-Popup",
     "quicklink": "^2.2.0",
     "slick-carousel": "^1.8.1",
+    "@hyas/images": "^0.2.1",
     "waypoints": "^4.0.1"
   },
   "devDependencies": {
@@ -62,8 +63,6 @@
     "@commitlint/cli": "^17.0.2",
     "@commitlint/config-conventional": "^17.0.2",
     "@fullhuman/postcss-purgecss": "^4.1",
-    "@hyas/images": "^0.2.1",
-    "@popperjs/core": "^2.11",
     "auto-changelog": "^2.4",
     "autoprefixer": "^10.4",
     "eslint": "^8.19",

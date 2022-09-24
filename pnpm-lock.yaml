@@ -8,7 +8,6 @@ specifiers:
   '@commitlint/config-conventional': ^17.0.2
   '@fullhuman/postcss-purgecss': ^4.1
   '@hyas/images': ^0.2.1
-  '@popperjs/core': ^2.11
   auto-changelog: ^2.4
   autoprefixer: ^10.4
   bootstrap: ^4.6.2
@@ -38,6 +37,7 @@ specifiers:
   waypoints: ^4.0.1
 
 dependencies:
+  '@hyas/images': 0.2.3
   bootstrap: 4.6.2_47tpum6wtjtozdoo6t4hr5iro4
   gsap: 1.20.5
   imagesloaded: 5.0.0
@@ -55,8 +55,6 @@ devDependencies:
   '@commitlint/cli': 17.1.2
   '@commitlint/config-conventional': 17.1.0
   '@fullhuman/postcss-purgecss': 4.1.3_postcss@8.4.16
-  '@hyas/images': 0.2.3
-  '@popperjs/core': 2.11.6
   auto-changelog: 2.4.0
   autoprefixer: 10.4.11_postcss@8.4.16
   eslint: 8.23.1
@@ -1478,7 +1476,7 @@ packages:
 
   /@hyas/images/0.2.3:
     resolution: {integrity: sha512-PoGQ8DC3erHHS9sAlsrrGOlfqV3RgmIFYhSWcigB/7tE6tUNj4j57T4MjmlEyNcawlVsHvCaoYqPaElQn24aaQ==}
-    dev: true
+    dev: false
 
   /@jridgewell/gen-mapping/0.1.1:
     resolution: {integrity: sha512-sQXCasFk+U8lWYEe66WxRDOE9PjVz4vSM51fTu3Hw+ClTpUSQb718772vH3pyS5pShp6lvQM7SxgIDXXXmOX7w==}
@@ -1550,10 +1548,6 @@ packages:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.13.0
-    dev: true
-
-  /@popperjs/core/2.11.6:
-    resolution: {integrity: sha512-50/17A98tWUfQ176raKiOGXuYpLyyVMkxxG6oylzL3BPOlA6ADGdK7EYunSa4I064xerltq9TGXs8HmOk5E+vw==}
     dev: true
 
   /@sindresorhus/is/4.6.0:
