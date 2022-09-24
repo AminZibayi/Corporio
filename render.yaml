@@ -4,7 +4,7 @@ services:
   - type: web
     name: corporio # Your website name
     env: static
-    buildCommand: pnpm config set auto-install-peers true; pnpm install; pnpm build
+    buildCommand: pnpm install; pnpm add popper.js@1.16.1; pnpm build
     staticPublishPath: ./public
     pullRequestPreviewsEnabled: true # Optional
     buildFilter:
