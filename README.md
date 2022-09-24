@@ -54,7 +54,7 @@
 
 ## Demo
 
-- [hyas.netlify.app](https://hyas.netlify.app/)
+- [corporio.onrender.com](https://corporio.onrender.com/)
 
 ## Why Corporio?
 
