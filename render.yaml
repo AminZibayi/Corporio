@@ -30,7 +30,7 @@ services:
         value: 1; mode=block
       - path: /public/*
         name: Content-Security-Policy
-        value: default-src 'self'; manifest-src 'self'; connect-src 'self'; font-src 'self'; img-src 'self' data:; script-src 'self' 'nonce-dXNlcj0iaGVsbG8iLGRvbWFpbj0iaGVua3ZlcmxpbmRlLmNvbSIsZG9jdW1lbnQud3JpdGUodXNlcisiQCIrZG9tYWluKTs=' 'sha256-aWZ3y/RxbBYKHXH0z8+8ljrHG1mSBvyzSfxSMjBSaXk='; style-src 'self'
+        value: default-src 'self'; manifest-src 'self'; connect-src 'self'; font-src 'self' fonts.gstatic.com; img-src 'self' data:; script-src 'self' www.googletagmanager.com unpkg.com cdn.jsdelivr.net 'nonce-dXNlcj0iaGVsbG8iLGRvbWFpbj0iaGVua3ZlcmxpbmRlLmNvbSIsZG9jdW1lbnQud3JpdGUodXNlcisiQCIrZG9tYWluKTs=' 'sha256-aWZ3y/RxbBYKHXH0z8+8ljrHG1mSBvyzSfxSMjBSaXk='; style-src 'self' fonts.googleapis.com 'unsafe-inline'
       - path: /public/*
         name: X-Frame-Options
         value: SAMEORIGIN
@@ -42,7 +42,7 @@ services:
         value: geolocation 'self'
       - path: /public/*
         name: Cache-Control
-        value: public, max-age=31536000
+        value: public, max-age=2592000
       - path: /public/*
         name: Access-Control-Allow-Origin
         value: "*"
