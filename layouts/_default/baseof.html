@@ -4,7 +4,7 @@
   {{- partial "head/body-class.html" . -}}
 
 
-  <body class="{{ delimit (.Scratch.Get "class") " " }}">
+  <body>
     {{ partial "header/navbar.html" . }}
     <div id="content" role="document">
       {{ block "main" . }}{{ end }}
