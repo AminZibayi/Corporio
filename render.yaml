@@ -19,31 +19,31 @@ services:
         - package.json
         - render.yaml
     headers:
-      - path: /public/*
+      - path: /*
         name: Strict-Transport-Security
         value: max-age=31536000; includeSubDomains; preload
-      - path: /public/*
+      - path: /*
         name: X-Content-Type-Options
         value: nosniff
-      - path: /public/*
+      - path: /*
         name: X-XSS-Protection
         value: 1; mode=block
-      - path: /public/*
+      - path: /*
         name: Content-Security-Policy
-        value: default-src 'self'; manifest-src 'self'; connect-src 'self'; font-src 'self'; img-src 'self' data:; script-src 'self' 'nonce-dXNlcj0iaGVsbG8iLGRvbWFpbj0iaGVua3ZlcmxpbmRlLmNvbSIsZG9jdW1lbnQud3JpdGUodXNlcisiQCIrZG9tYWluKTs=' 'sha256-aWZ3y/RxbBYKHXH0z8+8ljrHG1mSBvyzSfxSMjBSaXk='; style-src 'self'
-      - path: /public/*
+        value: default-src 'self'; manifest-src 'self'; connect-src 'self'; font-src 'self' fonts.gstatic.com; img-src 'self' data:; script-src 'self' www.googletagmanager.com unpkg.com cdn.jsdelivr.net 'nonce-dXNlcj0iaGVsbG8iLGRvbWFpbj0iaGVua3ZlcmxpbmRlLmNvbSIsZG9jdW1lbnQud3JpdGUodXNlcisiQCIrZG9tYWluKTs=' 'sha256-aWZ3y/RxbBYKHXH0z8+8ljrHG1mSBvyzSfxSMjBSaXk='; style-src 'self' fonts.googleapis.com 'unsafe-inline'
+      - path: /*
         name: X-Frame-Options
         value: SAMEORIGIN
-      - path: /public/*
+      - path: /*
         name: Referrer-Policy
         value: strict-origin
-      - path: /public/*
+      - path: /*
         name: Feature-Policy
         value: geolocation 'self'
-      - path: /public/*
+      - path: /*
         name: Cache-Control
-        value: public, max-age=31536000
-      - path: /public/*
+        value: public, max-age=2592000
+      - path: /*
         name: Access-Control-Allow-Origin
         value: "*"
     # routes:
