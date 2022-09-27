@@ -1,40 +1,34 @@
-<p align="center">
-  <a href="https://gethyas.com/">
-    <img alt="Doks" src="https://hyas.netlify.app/hyas.svg" width="60">
-  </a>
-</p>
-
 <h1 align="center">
-  Hyas
+  Corporio
 </h1>
 
 <h3 align="center">
-  Modern Hugo Starter
+  Corporation Website Template
 </h3>
 
 <p align="center">
-  Hyas is a Hugo starter helping you build modern websites that are secure, fast, and SEO-ready — by default.
+  Corporio is an enterprise level corporation website template leveraging latest technologies making it secure, fast, and SEO-ready — by default
 </p>
 
-<p align="center">
-  <a href="https://github.com/h-enk/hyas/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/h-enk/hyas?style=flat-square" alt="GitHub">
+<!-- <p align="center">
+  <a href="https://github.com/AminZibayi/Corporio/blob/master/LICENSE">
+    <img src="https://img.shields.io/github/license/AminZibayi/Corporio?style=flat-square" alt="GitHub">
   </a>
-  <a href="https://github.com/h-enk/hyas/releases">
-    <img src="https://img.shields.io/github/v/release/h-enk/hyas?include_prereleases&style=flat-square"alt="GitHub release (latest SemVer including pre-releases)">
+  <a href="https://github.com/AminZibayi/Corporio/releases">
+    <img src="https://img.shields.io/github/v/release/AminZibayi/Corporio?include_prereleases&style=flat-square"alt="GitHub release (latest SemVer including pre-releases)">
   </a>
   <a href="https://www.npmjs.com/package/@hyas/core">
     <img src="https://img.shields.io/npm/v/@hyas/core?style=flat-square" alt="npm (scoped)">
   </a>
-  <a href="https://github.com/h-enk/hyas/actions?query=workflow%3A%22Hyas+CI%22">
-    <img src="https://img.shields.io/github/workflow/status/h-enk/hyas/Hyas%20CI/master?style=flat-square" alt="GitHub Workflow Status (branch)">
+  <a href="https://github.com/AminZibayi/Corporio/actions?query=workflow%3A%22Hyas+CI%22">
+    <img src="https://img.shields.io/github/workflow/status/AminZibayi/Corporio/Hyas%20CI/master?style=flat-square" alt="GitHub Workflow Status (branch)">
   </a>
   <a href="https://app.netlify.com/sites/hyas/deploys">
     <img src="https://img.shields.io/netlify/895a161c-86be-48a2-8c57-a8c5d68cd1a4?style=flat-square" alt="Netlify">
   </a>
-</p>
+</p> -->
 
-![Hyas — Modern Hugo Starter](https://raw.githubusercontent.com/h-enk/hyas/master/images/tn.png)
+![Corporio — Corporation Website Template](https://raw.githubusercontent.com/AminZibayi/Corporio/master/images/tn.png)
 
 - [Demo](#demo)
 - [Why Corporio?](#why-corporio)
@@ -50,7 +44,9 @@
     - [3. Configure website](#3-configure-website)
 - [Other commands](#other-commands)
 - [Documentation](#documentation)
+- [Contributing](#contributing)
 - [Communities](#communities)
+- [License](#license)
 
 ## Demo
 
@@ -58,18 +54,19 @@
 
 ## Why Corporio?
 
-Six reasons why you should use Corporio:
+Eight reasons why you should use Corporio:
 
-1. **Security aware**. Get A+ scores on [Mozilla Observatory](https://observatory.mozilla.org/analyze/hyas.netlify.app) out of the box. Easily change the default Security Headers to suit your needs.
-2. **Fast by default**. Get 100 scores on [Google Lighthouse](https://googlechrome.github.io/lighthouse/viewer/?gist=bc1047434376aa5b3e50cf637f8a5b40) by default. Corporio removes unused css, prefetches links, and lazy loads images.
+1. **Security aware**. Get A+ scores on [Mozilla Observatory](https://observatory.mozilla.org/analyze/corporio.onrender.com) out of the box. Easily change the default Security Headers to suit your needs.
+2. **Fast by default**. Leveraging the fastest static site generator, delivering optimized and minified static assets on the fastest CDNs on Render and Netlify.
 3. **SEO-ready**. Use sensible defaults for structured data, open graph, and Twitter cards. Or easily change the SEO settings to your liking.
 4. **Development tools**. Code with confidence. Check styles, scripts, and markdown for errors and fix automatically or manually.
-5. **Bootstrap framework**. Build robust, flexible, and intuitive websites with Bootstrap. Or use any other front-end framework if you prefer.
-6. **Netlify-ready**. Deploy to Netlify with sensible defaults. Easily use Netlify Functions, Netlify Redirects, and Netlify Headers.
+5. **Responsive**. Build robust, flexible, and intuitive websites with that looks best on any device.
+6. **Integrated Blog**. Beside the modern and well-designed company landing page, Corporio ships with a built-in and ready full-featured blog.
+7. **Products Page**. Introduce your products and services perfectly and impress your customers with our stunning product pages.
+8. **Deploy-ready**. Deploy to Netlify or Render with sensible defaults. Easily use Netlify Functions, Render Redirects, and Headers.
 
 ## Requirements
 
-- [Git](https://git-scm.com/) — latest source release
 - [Node.js](https://nodejs.org/) — latest LTS version
 
 ## Get Started
@@ -127,6 +124,16 @@ _TODO_
 
 _TODO_
 
+## Contributing
+
+You can contribute to this project by using it to create your own website, sharing it with your friends, sharing your ideas or reporting a bug through opening an issue and informing us if you have crafted your website using Corporio.
+
+Contribution to the source code and documentation are highly welcome, there are many comments in the source code containing the keyword `TODO:` which could be a good staring point for you, feel free to ask a question by opening an issue.
+
 ## Communities
 
 _TODO_
+
+## License
+
+[The MIT License](https://github.com/AminZibayi/Corporio/blob/master/LICENSE)
