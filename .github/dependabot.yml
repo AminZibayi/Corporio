@@ -7,8 +7,8 @@ updates:
     schedule:
       interval: "daily"
     commit-message:
-      prefix: "Fix(deps):"
-      prefix-development: "Dev(deps):"
+      prefix: "Fix"
+      prefix-development: "Dev"
       include: "scope"
     ignore:
       - dependency-name: "*"
