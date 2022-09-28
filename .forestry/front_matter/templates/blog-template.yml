@@ -1,0 +1,24 @@
+---
+label: Blog Template
+hide_body: false
+fields:
+  - type: text
+    name: title
+    label: Title
+  - type: datetime
+    name: date
+    label: date
+  - type: file
+    name: featureImage
+    label: featureImage
+  - type: file
+    name: postImage
+    label: postImage
+  - type: text
+    name: tags
+    label: Tags
+  - type: text
+    name: categories
+    label: Categories
+pages:
+  - content/blog/

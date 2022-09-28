@@ -1,0 +1,32 @@
+# In the Name of God, the Originator the Creative
+---
+label: Testimonial Template
+hide_body: true
+fields:
+  - type: boolean
+    name: enable
+    label: enable
+  - type: text
+    name: topTitle
+    label: top title
+  - type: textarea
+    name: title
+    label: title
+  - type: field_group_list
+    name: testimonial
+    label: Testimonials
+    fields:
+      - type: text
+        name: name
+        label: Name
+      - type: text
+        name: comment
+        label: Comment
+      - type: text
+        name: time
+        label: time
+      - type: number
+        name: star
+        label: Star
+pages:
+  - data/testimonialSection.yml

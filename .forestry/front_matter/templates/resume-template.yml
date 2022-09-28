@@ -1,0 +1,52 @@
+# In the Name of God, the Originator the Creative
+---
+label: Resume Template
+hide_body: true
+fields:
+  - type: boolean
+    name: enable
+    label: enable
+  - type: text
+    name: topTitle
+    label: top-title
+  - type: textarea
+    name: title
+    label: title
+  - type: text
+    name: tab1Name
+    label: tab1Name
+  - type: text
+    name: tab2Name
+    label: tab2Name
+  - type: text
+    name: tab1Target
+    label: tab1Target
+  - type: text
+    name: tab2Target
+    label: tab2Target
+  - type: field_group_list
+    name: education
+    label: education
+    fields:
+      - type: textarea
+        name: content
+        label: Content
+      - type: file
+        name: image
+        label: Image
+      - type: text
+        name: url
+        label: URL
+  - type: field_group_list
+    name: experience
+    label: experience
+    fields:
+      - type: textarea
+        name: content
+        label: Content
+      - type: file
+        name: image
+        label: Image
+      - type: text
+        name: url
+        label: URL

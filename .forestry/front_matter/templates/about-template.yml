@@ -1,0 +1,34 @@
+# In the Name of God, the Originator the Creative
+---
+label: About Template
+hide_body: true
+fields:
+  - type: boolean
+    name: enable
+    label: enable
+  - type: text
+    name: topTitle
+    label: top-title
+  - type: textarea
+    name: title
+    label: title
+  - type: textarea
+    name: content
+    label: content
+  - type: text
+    name: button1Name
+    label: button1Name
+  - type: text
+    name: button2Name
+    label: button2Name
+  - type: text
+    name: button1Target
+    label: button1Target
+  - type: text
+    name: button2Target
+    label: button2Target
+  - type: file
+    name: image
+    label: image
+pages:
+  - data/aboutSection.yml
