@@ -70,7 +70,7 @@
       "@type": "WebSite",
       "@id": {{ print $baseURL "#/schema/website/1" }},
       "url": {{ print $baseURL }},
-      "name": "{{ .Site.Params.title }}",
+      "name": "{{ .Site.Title }}",
       "description": "{{ .Site.Params.description }}",
       {{ if eq .Site.Params.schemaType "Organization" -}}
         "publisher": {

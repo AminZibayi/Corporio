@@ -14,7 +14,7 @@
 {{ else -}}
   <meta property="og:url" content="{{ .Permalink }}" />
 {{ end -}}
-{{ with .Site.Params.title -}}
+{{ with .Site.Title -}}
   <meta property="og:site_name" content="{{ . }}" />
 {{ end -}}
 
@@ -55,7 +55,7 @@
   {{ else -}}
     {{ with $.Site.Params.images -}}
       <meta property="og:image" content="{{ index . 0 | absURL }}" />
-      <meta property="og:image:alt" content="{{ $.Site.Params.title }}" />
+      <meta property="og:image:alt" content="{{ $.Site.Title }}" />
     {{ end -}}
   {{ end -}}
 {{ end -}}
