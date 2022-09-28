@@ -53,7 +53,7 @@
     "magnific-popup": "github:dimsemenov/Magnific-Popup",
     "quicklink": "^2.2.0",
     "slick-carousel": "^1.8.1",
-    "@hyas/images": "^0.2.1",
+    "@hyas/images": "^0.3.0",
     "waypoints": "^4.0.1"
   },
   "devDependencies": {
