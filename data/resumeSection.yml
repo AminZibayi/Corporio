@@ -1,10 +1,12 @@
+# In the Name of God, the Originator the Creative
+# TODO: use semantic names for data fields
 ---
 enable: true
 topTitle: Our Certificates
 title: >
   ## Quality Ensured
 
-  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore  
+  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
 
 
   Magna aliquyam erat, sed diam voluptua. At vero eos accusam justo.
@@ -41,19 +43,19 @@ education:
 
 experience:
   - content: >
-      #### Umbrella co. 
+      #### Umbrella co.
 
       Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod tempor invidunt
     image: /images/certificates/Organic.png
     url: https://trustseal.enamad.ir/?id=288479&Code=O8micNNDSNWcTh9xIOhQ
   - content: >
-      #### Aperture Science 
+      #### Aperture Science
 
       Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod tempor invidunt
     image: /images/certificates/enamad.png
     url: https://trustseal.enamad.ir/?id=288479&Code=O8micNNDSNWcTh9xIOhQ
   - content: >
-      #### ACME Inc. 
+      #### ACME Inc.
 
       Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod tempor invidunt
     image: /images/certificates/halal.jpg
