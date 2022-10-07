@@ -63,5 +63,5 @@ build:
   mount_path: "/srv"
   working_dir: "/srv"
   install_dependencies_command: npm install
-  instant_preview_command: hugo server -D -E -F --renderToDisk -d public
+  instant_preview_command: npm run forestry
 version: 0.101.0
