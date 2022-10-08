@@ -29,6 +29,7 @@
     "build:lan": "exec-bin node_modules/.bin/hugo/hugo --gc --minify --baseURL=http://192.168.1.10:8080",
     "build:preview": "npm run build -D -F",
     "clean": "shx rm -rf public resources",
+    "clean:git": "git branch --merged master | grep -v '^[ *]*master$' | xargs git branch -d",
     "clean:install": "shx rm -rf pnpm-lock.yaml node_modules ",
     "lint": "npm run -s lint:scripts && npm run -s lint:styles && npm run -s lint:markdown",
     "lint:scripts": "eslint assets/js config functions",
