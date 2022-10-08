@@ -1,0 +1,67 @@
+---
+new_page_extension: md
+auto_deploy: false
+admin_path: "/static/admin"
+webhook_url:
+sections:
+  - type: document
+    path: data/hero.yml
+    label: Hero
+  - type: document
+    path: data/aboutSection.yml
+    label: About
+  - type: document
+    path: data/serviceSection.yml
+    label: Services
+  - type: document
+    path: data/resumeSection.yml
+    label: Resume
+  - type: document
+    path: data/testimonialSection.yml
+    label: Testimonials
+  - type: document
+    path: data/productSection.yml
+    label: Product Section
+  - type: document
+    path: data/blogSection.yml
+    label: Blog Section
+  - type: directory
+    path: content/product
+    label: Product
+    create: all
+    match: "**/*"
+  - type: directory
+    path: content/contact
+    label: Contact
+    create: all
+    match: "**/*"
+  - type: directory
+    path: content/blog
+    label: Blog
+    create: all
+    match: "**/*"
+  - type: document
+    path: config/_default/config.yaml
+    label: Config File
+  - type: document
+    path: config/_default/menus.yaml
+    label: Menus File
+  - type: document
+    path: config/_default/params.yaml
+    label: Parameters File
+upload_dir: static/images
+public_path: "/images"
+front_matter_path: ""
+use_front_matter_path: false
+file_template: ":filename:"
+build:
+  preview_env:
+    - HUGO_ENV=staging
+    - HUGO_VERSION=0.101.0
+  preview_output_directory: public
+  preview_docker_image: forestryio/node:16
+  mount_path: "/srv"
+  working_dir: "/srv"
+  install_dependencies_command: npm install
+  instant_preview_command: npm run forestry
+version: 0.101.0

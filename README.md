@@ -59,11 +59,12 @@ Eight reasons why you should use Corporio:
 1. **Security aware**. Get A+ scores on [Mozilla Observatory](https://observatory.mozilla.org/analyze/corporio.onrender.com) out of the box. Easily change the default Security Headers to suit your needs.
 2. **Fast by default**. Leveraging the fastest static site generator, delivering optimized and minified static assets on the fastest CDNs on Render and Netlify.
 3. **SEO-ready**. Use sensible defaults for structured data, open graph, and Twitter cards. Or easily change the SEO settings to your liking.
-4. **Development tools**. Code with confidence. Check styles, scripts, and markdown for errors and fix automatically or manually.
-5. **Responsive**. Build robust, flexible, and intuitive websites with that looks best on any device.
-6. **Integrated Blog**. Beside the modern and well-designed company landing page, Corporio ships with a built-in and ready full-featured blog.
-7. **Products Page**. Introduce your products and services perfectly and impress your customers with our stunning product pages.
-8. **Deploy-ready**. Deploy to Netlify or Render with sensible defaults. Easily use Netlify Functions, Render Redirects, and Headers.
+4. **Forestry Integrated**. Do you prefer a graphical user interface over a text editor? or do you want to deliver the website to your non-technical customer? If so, Corporio is already integrated with forestry, a feature-rich headless CMS.
+5. **Development tools**. Code with confidence. Check styles, scripts, and markdown for errors and fix automatically or manually.
+6. **Responsive**. Build robust, flexible, and intuitive websites with that looks best on any device.
+7. **Integrated Blog**. Beside the modern and well-designed company landing page, Corporio ships with a built-in and ready full-featured blog.
+8. **Products Page**. Introduce your products and services perfectly and impress your customers with our stunning product pages.
+9. **Deploy-ready**. Deploy to Netlify or Render with sensible defaults. Easily use Netlify Functions, Render Redirects, and Headers.
 
 ## Requirements
 
