@@ -3,7 +3,8 @@
   "description": "Corporio Hugo Theme",
   "version": "1.5.8",
   "engines": {
-    "node": ">=16.16.0"
+    "node": ">=16.16.0 <17.0.0 || ^18",
+    "pnpm": "^8"
   },
   "browserslist": [
     "defaults"
