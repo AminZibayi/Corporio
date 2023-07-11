@@ -1,16 +1,18 @@
 import { defineConfig } from "tinacms";
-import { about_templateFields } from "./templates";
-import { blog_section_templateFields } from "./templates";
-import { blog_templateFields } from "./templates";
-import { config_templateFields } from "./templates";
-import { hero_templateFields } from "./templates";
-import { menus_templateFields } from "./templates";
-import { parameters_templateFields } from "./templates";
-import { product_section_templateFields } from "./templates";
-import { product_templateFields } from "./templates";
-import { resume_templateFields } from "./templates";
-import { service_templateFields } from "./templates";
-import { testimonial_templateFields } from "./templates";
+import {
+  about_templateFields,
+  blog_section_templateFields,
+  blog_templateFields,
+  config_templateFields,
+  hero_templateFields,
+  menus_templateFields,
+  parameters_templateFields,
+  product_section_templateFields,
+  product_templateFields,
+  resume_templateFields,
+  service_templateFields,
+  testimonial_templateFields,
+} from "./templates";
 
 // Your hosting provider likely exposes this as an environment variable
 const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "main";
@@ -47,51 +49,7 @@ export default defineConfig({
         match: {
           include: "hero",
         },
-        fields: [
-          {
-            type: "boolean",
-            name: "enable",
-            label: "enable",
-          },
-          {
-            type: "string",
-            name: "topTitle",
-            label: "title",
-          },
-          {
-            type: "string",
-            name: "content",
-            label: "content",
-            ui: {
-              component: "textarea",
-            },
-          },
-          {
-            type: "string",
-            name: "buttonName",
-            label: "buttonName",
-          },
-          {
-            type: "string",
-            name: "buttonURL",
-            label: "buttonURL",
-          },
-          {
-            type: "image",
-            name: "image",
-            label: "image",
-          },
-          {
-            type: "image",
-            name: "videoThumb",
-            label: "videoThumb",
-          },
-          {
-            type: "string",
-            name: "videoURL",
-            label: "videoURL",
-          },
-        ],
+        fields: hero_templateFields(),
       },
       {
         format: "yml",
@@ -108,59 +66,7 @@ export default defineConfig({
         match: {
           include: "aboutSection",
         },
-        fields: [
-          {
-            type: "boolean",
-            name: "enable",
-            label: "enable",
-          },
-          {
-            type: "string",
-            name: "topTitle",
-            label: "top-title",
-          },
-          {
-            type: "string",
-            name: "title",
-            label: "title",
-            ui: {
-              component: "textarea",
-            },
-          },
-          {
-            type: "string",
-            name: "content",
-            label: "content",
-            ui: {
-              component: "textarea",
-            },
-          },
-          {
-            type: "string",
-            name: "button1Name",
-            label: "button1Name",
-          },
-          {
-            type: "string",
-            name: "button2Name",
-            label: "button2Name",
-          },
-          {
-            type: "string",
-            name: "button1Target",
-            label: "button1Target",
-          },
-          {
-            type: "string",
-            name: "button2Target",
-            label: "button2Target",
-          },
-          {
-            type: "image",
-            name: "image",
-            label: "image",
-          },
-        ],
+        fields: about_templateFields(),
       },
       {
         format: "yml",
@@ -177,47 +83,7 @@ export default defineConfig({
         match: {
           include: "serviceSection",
         },
-        fields: [
-          {
-            type: "boolean",
-            name: "enable",
-            label: "enable",
-          },
-          {
-            type: "string",
-            name: "topTitle",
-            label: "topTitle",
-          },
-          {
-            type: "string",
-            name: "title",
-            label: "title",
-            ui: {
-              component: "textarea",
-            },
-          },
-          {
-            type: "object",
-            name: "service",
-            label: "Service",
-            list: true,
-            fields: [
-              {
-                type: "string",
-                name: "content",
-                label: "Content",
-                ui: {
-                  component: "textarea",
-                },
-              },
-              {
-                type: "image",
-                name: "image",
-                label: "Icon",
-              },
-            ],
-          },
-        ],
+        fields: service_templateFields(),
       },
       {
         format: "yml",
@@ -234,15 +100,7 @@ export default defineConfig({
         match: {
           include: "resumeSection",
         },
-        fields: [
-          {
-            name: "dummy",
-            label: "Dummy field",
-            type: "string",
-            description:
-              "This is a dummy field, please replace it with the fields you want to edit. See https://tina.io/docs/schema/ for more info",
-          },
-        ],
+        fields: resume_templateFields(),
       },
       {
         format: "yml",
@@ -259,54 +117,7 @@ export default defineConfig({
         match: {
           include: "testimonialSection",
         },
-        fields: [
-          {
-            type: "boolean",
-            name: "enable",
-            label: "enable",
-          },
-          {
-            type: "string",
-            name: "topTitle",
-            label: "top title",
-          },
-          {
-            type: "string",
-            name: "title",
-            label: "title",
-            ui: {
-              component: "textarea",
-            },
-          },
-          {
-            type: "object",
-            name: "testimonial",
-            label: "Testimonials",
-            list: true,
-            fields: [
-              {
-                type: "string",
-                name: "name",
-                label: "Name",
-              },
-              {
-                type: "string",
-                name: "comment",
-                label: "Comment",
-              },
-              {
-                type: "string",
-                name: "time",
-                label: "time",
-              },
-              {
-                type: "number",
-                name: "star",
-                label: "Star",
-              },
-            ],
-          },
-        ],
+        fields: testimonial_templateFields(),
       },
       {
         format: "yml",
@@ -323,26 +134,7 @@ export default defineConfig({
         match: {
           include: "productSection",
         },
-        fields: [
-          {
-            type: "boolean",
-            name: "enable",
-            label: "enable",
-          },
-          {
-            type: "string",
-            name: "topTitle",
-            label: "title",
-          },
-          {
-            type: "string",
-            name: "title",
-            label: "Title",
-            ui: {
-              component: "textarea",
-            },
-          },
-        ],
+        fields: product_section_templateFields(),
       },
       {
         format: "yml",
@@ -359,36 +151,7 @@ export default defineConfig({
         match: {
           include: "blogSection",
         },
-        fields: [
-          {
-            type: "boolean",
-            name: "enable",
-            label: "enable",
-          },
-          {
-            type: "string",
-            name: "topTitle",
-            label: "title",
-          },
-          {
-            type: "string",
-            name: "title",
-            label: "Title",
-            ui: {
-              component: "textarea",
-            },
-          },
-          {
-            type: "string",
-            name: "buttonName",
-            label: "Button name",
-          },
-          {
-            type: "string",
-            name: "buttonTarget",
-            label: "Button target",
-          },
-        ],
+        fields: blog_section_templateFields(),
       },
       {
         format: "md",
@@ -399,15 +162,7 @@ export default defineConfig({
         match: {
           include: "**/*",
         },
-        fields: [
-          {
-            type: "rich-text",
-            name: "body",
-            label: "Body of Document",
-            description: "This is the markdown body",
-            isBody: true,
-          },
-        ],
+        fields: product_templateFields(),
       },
       {
         format: "md",
@@ -437,15 +192,7 @@ export default defineConfig({
         match: {
           include: "**/*",
         },
-        fields: [
-          {
-            type: "rich-text",
-            name: "body",
-            label: "Body of Document",
-            description: "This is the markdown body",
-            isBody: true,
-          },
-        ],
+        fields: blog_templateFields(),
       },
       {
         format: "yaml",
@@ -462,33 +209,7 @@ export default defineConfig({
         match: {
           include: "config",
         },
-        fields: [
-          {
-            type: "string",
-            name: "baseURL",
-            label: "baseURL",
-          },
-          {
-            type: "string",
-            name: "languageCode",
-            label: "languageCode",
-          },
-          {
-            type: "string",
-            name: "title",
-            label: "Title",
-          },
-          {
-            type: "string",
-            name: "theme",
-            label: "theme",
-          },
-          {
-            type: "number",
-            name: "paginate",
-            label: "paginate",
-          },
-        ],
+        fields: config_templateFields(),
       },
       {
         format: "yaml",
@@ -505,15 +226,7 @@ export default defineConfig({
         match: {
           include: "menus",
         },
-        fields: [
-          {
-            name: "dummy",
-            label: "Dummy field",
-            type: "string",
-            description:
-              "This is a dummy field, please replace it with the fields you want to edit. See https://tina.io/docs/schema/ for more info",
-          },
-        ],
+        fields: menus_templateFields(),
       },
       {
         format: "yaml",
@@ -530,61 +243,7 @@ export default defineConfig({
         match: {
           include: "params",
         },
-        fields: [
-          {
-            type: "object",
-            name: "main",
-            label: "Main menu",
-            fields: [
-              {
-                type: "object",
-                name: "main",
-                label: "main",
-                list: true,
-                fields: [
-                  {
-                    type: "string",
-                    name: "name",
-                    label: "name",
-                  },
-                  {
-                    type: "string",
-                    name: "url",
-                    label: "url",
-                  },
-                  {
-                    type: "number",
-                    name: "weight",
-                    label: "weight",
-                  },
-                ],
-              },
-            ],
-          },
-          {
-            type: "object",
-            name: "sitemap",
-            label: "Sitemap",
-            list: true,
-            fields: [
-              {
-                type: "string",
-                name: "name",
-                label: "name",
-              },
-              {
-                type: "string",
-                name: "url",
-                label: "url",
-              },
-              {
-                type: "number",
-                name: "weight",
-                label: "weight",
-              },
-            ],
-          },
-        ],
+        fields: parameters_templateFields(),
       },
     ],
   },

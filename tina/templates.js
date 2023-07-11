@@ -271,16 +271,6 @@ export function parameters_templateFields() {
     },
     {
       type: "boolean",
-      name: "alert",
-      label: "Alert Enabled",
-    },
-    {
-      type: "boolean",
-      name: "alert",
-      label: "Alert Enabled",
-    },
-    {
-      type: "boolean",
       name: "alertDismissable",
       label: "Alert dismissable",
     },
