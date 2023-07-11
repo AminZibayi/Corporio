@@ -1,7 +1,6 @@
----
 enable: true
 topTitle: Our Products
-title: >
+title: |
   ## Our Latest Products
-
   Healthiness together with tastiness is the true definition of Helmani products
+_template: product_section_template

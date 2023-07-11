@@ -1,10 +1,10 @@
----
 enable: true
 topTitle: Product Categories
 title: >
   ## Diversity in Products
 
-  From tasty dried fruits to nutritious nuts and saffron are provided by Helmani.
+  From tasty dried fruits to nutritious nuts and saffron are provided by
+  Helmani.
 service:
   - content: >
       #### Pistachios 
@@ -42,3 +42,4 @@ service:
       Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod
       tempor invidunt ut labore et dolore magna aliquyam erat.
     image: images/service/barberry.png
+_template: service_template
