@@ -26,9 +26,10 @@ export default defineConfig({
     outputFolder: "admin",
     publicFolder: "static",
   },
+  // TODO: fix issue with Tina not detecting media files in assets directory
   media: {
     tina: {
-      mediaRoot: "",
+      mediaRoot: "images",
       publicFolder: "static",
     },
   },
