@@ -1,11 +1,10 @@
-# In the Name of God, the Originator the Creative
----
 enable: true
 topTitle: Blog
 title: >
   ## Recent Article
 
-  Enjoy team diversity and increase their networks among others people in various fields by provided.
-
+  Enjoy team diversity and increase their networks among others people in
+  various fields by provided.
 buttonName: See All Posts
 buttonTarget: blog
+_template: blog_section_template

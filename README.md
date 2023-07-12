@@ -42,6 +42,11 @@
     - [1. Create a new site](#1-create-a-new-site-1)
     - [2. Install dependencies](#2-install-dependencies-1)
     - [3. Configure website](#3-configure-website)
+- [Tina CMS](#tina-cms)
+  - [Using TinaCMS development mode](#using-tinacms-development-mode)
+  - [Using TinaCMS with Corporio in production](#using-tinacms-with-corporio-in-production)
+  - [Building without TinaCMS](#building-without-tinacms)
+  - [Benefits of using TinaCMS](#benefits-of-using-tinacms)
 - [Other commands](#other-commands)
 - [Documentation](#documentation)
 - [Contributing](#contributing)
@@ -59,7 +64,7 @@ Eight reasons why you should use Corporio:
 1. **Security aware**. Get A+ scores on [Mozilla Observatory](https://observatory.mozilla.org/analyze/corporio.onrender.com) out of the box. Easily change the default Security Headers to suit your needs.
 2. **Fast by default**. Leveraging the fastest static site generator, delivering optimized and minified static assets on the fastest CDNs on Render and Netlify.
 3. **SEO-ready**. Use sensible defaults for structured data, open graph, and Twitter cards. Or easily change the SEO settings to your liking.
-4. **Forestry Integrated**. Do you prefer a graphical user interface over a text editor? or do you want to deliver the website to your non-technical customer? If so, Corporio is already integrated with forestry, a feature-rich headless CMS.
+4. **Tina Integrated**. Do you prefer a graphical user interface over a text editor? or do you want to deliver the website to your non-technical customer? If so, Corporio is already integrated with tina, a feature-rich headless CMS.
 5. **Development tools**. Code with confidence. Check styles, scripts, and markdown for errors and fix automatically or manually.
 6. **Responsive**. Build robust, flexible, and intuitive websites with that looks best on any device.
 7. **Integrated Blog**. Beside the modern and well-designed company landing page, Corporio ships with a built-in and ready full-featured blog.
@@ -116,6 +121,39 @@ cd /themes/corporio && pnpm install
 #### 3. Configure website
 
 Add `theme: "corporio"` to your website config file.
+
+## Tina CMS
+
+The Corporio template includes integration with TinaCMS, an open-source headless content management system. TinaCMS allows you to edit and manage content directly within GitHub repositories using a graphical editing interface.
+
+### Using TinaCMS development mode
+
+The `tina:dev` script starts TinaCMS in dev mode along with the Hugo development
+server. This allows editing content in TinaCMS and seeing changes live.
+Head to http://localhost:1313/admin to see Tina admin panel.
+
+### Using TinaCMS with Corporio in production
+
+The `tina:build` script builds TinaCMS alongside generating a static site output with Hugo.
+
+- Sign up for a free Tina account at https://tina.io/
+- Create a new project and connect your GitHub repository that contains the Corporio codebase
+- Enter your own tina clientId and token in `tina/config.js`
+- Tina will automatically detect the configuration for collections and fields in tina/config.js
+- You can then edit content in Tina's sidebar interface or modal popups
+- Saved changes will commit back to your connected repo
+
+### Building without TinaCMS
+
+If you don’t need Tina integration, you can use the command `pnpm build`. This command will skip the Tina build step.
+
+### Benefits of using TinaCMS
+
+- Edit content visually without needing to edit code
+- Integrated workflow using your existing Git repo
+- Collaborate with other editors and content creators
+- Work with both markdown and YAML content
+- Flexible fields and media management
 
 ## Other commands
 

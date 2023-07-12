@@ -1,12 +1,13 @@
----
 enable: true
 topTitle: We Are Helmani!
 content: >
   # Healthy Food, Healthy Life
 
-  The premium quality and tasty dried fruits and nuts from the best farms of Iran toi bring you a healthier and tastier life!
+  The premium quality and tasty dried fruits and nuts from the best farms of
+  Iran toi bring you a healthier and tastier life!
 buttonName: Contact Us
 buttonURL: contact
 image: images/hero/nuts.jpg
 videoThumb: images/hero/pistachios.jpg
-videoURL: https://youtu.be/1-NOOoqlvfA
+videoURL: 'https://youtu.be/1-NOOoqlvfA'
+_template: hero_template
