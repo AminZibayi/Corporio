@@ -134,6 +134,8 @@ Head to http://localhost:1313/admin to see Tina admin panel.
 
 ### Using TinaCMS with Corporio in production
 
+The `tina:build` script builds TinaCMS alongside generating a static site output with Hugo.
+
 - Sign up for a free Tina account at https://tina.io/
 - Create a new project and connect your GitHub repository that contains the Corporio codebase
 - Enter your own tina clientId and token in `tina/config.js`
@@ -143,7 +145,7 @@ Head to http://localhost:1313/admin to see Tina admin panel.
 
 ### Building without TinaCMS
 
-If you don’t need Tina integration, you can use the command `pnpm build:no-tina`. This command will skip the Tina build step.
+If you don’t need Tina integration, you can use the command `pnpm build`. This command will skip the Tina build step.
 
 ### Benefits of using TinaCMS
 
