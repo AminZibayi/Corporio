@@ -26,7 +26,7 @@
     "forestry": "exec-bin node_modules/.bin/hugo/hugo server -D -E -F --renderToDisk -d public",
     "tina:dev": "tinacms dev -c \"pnpm start\"",
     "prebuild": "pnpm run clean",
-    "build": "exec-bin node_modules/.bin/hugo/hugo --gc --minify",
+    "build": "tinacms build && exec-bin node_modules/.bin/hugo/hugo --gc --minify",
     "build:lan": "exec-bin node_modules/.bin/hugo/hugo --gc --minify --baseURL=http://192.168.1.10:8080",
     "build:preview": "pnpm run build -D -F",
     "clean": "shx rm -rf public resources",
