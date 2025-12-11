@@ -7,6 +7,7 @@
     </svg>
   </div>
   <div class="container">
+    {{ if ne .Kind "404" }}
     <div class="row">
       <div class="col-lg-12">
         <div class="footer__cta">
@@ -37,6 +38,7 @@
         </div>
       </div>
     </div>
+    {{ end }}
     <div class="row footer__widget">
       <div class="col-lg-4">
         <div class="footer__widget_logo mb-5">
