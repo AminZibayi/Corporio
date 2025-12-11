@@ -2,9 +2,11 @@
   padding: 40px 0;
   background: transparent;
   transition: all 0.3s ease;
+
   @include desktop {
     background: $white;
   }
+
   @include desktop {
     padding: 15px 20px;
     margin: 10px 10px 0;
@@ -21,10 +23,12 @@
     background: $white;
     padding: 20px 0;
     box-shadow: 0 10px 20px 0 rgba(50, 65, 141, 0.1);
+
     @include desktop {
       padding: 15px 20px;
     }
   }
+
   @include desktop {
     .navbar-toggler {
       outline: 0;

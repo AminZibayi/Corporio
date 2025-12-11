@@ -2,12 +2,14 @@
 
 .product {
   padding: 100px 0 135px;
+
   @include desktop {
     padding: 100px 0;
   }
   &-item {
     width: 50%;
     padding: 30px;
+
     @include tablet {
       width: 100%;
       padding: 0;
@@ -15,12 +17,14 @@
     }
     &:nth-child(4n) {
       padding-left: 70px;
+
       @include tablet {
         padding-left: 0;
       }
     }
     &:nth-child(4n-3) {
       padding-right: 70px;
+
       @include tablet {
         padding-right: 0;
       }
@@ -64,6 +68,7 @@
           left: -30px;
           transform: translateY(-50%);
         }
+
         @include tablet {
           transform: scaleY(1);
         }

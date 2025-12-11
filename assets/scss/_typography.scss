@@ -18,6 +18,7 @@ a.text-dark {
   font-size: 20px;
   display: block;
   color: $dark;
+
   @extend .mb-3;
 }
 
@@ -48,6 +49,7 @@ a.text-dark {
     color: $white;
   }
 }
+
 @each $color, $value in $theme-colors {
   .text-#{$color} {
     h1,

@@ -1,14 +1,14 @@
 {
-  "extends": ["stylelint-config-standard-scss", "stylelint-config-prettier"],
+  "extends": ["stylelint-config-standard-scss"],
   "rules": {
+    "selector-class-pattern": "^[a-z][A-Za-z0-9_-]*$",
+    "keyframes-name-pattern": "^[a-z][A-Za-z0-9_-]*$",
     "scss/at-import-partial-extension": null,
     "alpha-value-notation": "number",
     "rule-empty-line-before": null,
     "color-function-notation": "legacy",
     "no-empty-source": null,
-    "string-quotes": "double",
     "scss/comment-no-empty": null,
-    "max-line-length": null,
     "scss/at-extend-no-missing-placeholder": null,
     "at-rule-no-unknown": [
       true,

@@ -15,10 +15,12 @@ export default [
         ...globals.commonjs,
         ...globals.es2021,
         ...globals.node,
+        ...globals.jquery,
+        google: "readonly",
       },
     },
   },
   {
-    ignores: ["public/**", "node_modules/**", "resources/**"],
+    ignores: ["public/**", "node_modules/**", "resources/**", "assets/js/vendor/**"],
   },
 ];

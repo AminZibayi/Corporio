@@ -36,6 +36,7 @@
   #map {
     border-radius: 30px;
     height: 100%;
+
     @include desktop {
       height: 400px;
       margin-top: 60px;

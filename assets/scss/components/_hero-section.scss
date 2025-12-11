@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
   @include desktop {
     padding: 150px 0 30px;
   }
@@ -23,7 +24,8 @@
     position: absolute;
     bottom: 20px;
     left: -130px;
-    animation: move_top 5s infinite linear;
+    animation: move-top 5s infinite linear;
+
     @include desktop {
       display: none;
     }
@@ -31,6 +33,7 @@
   &_content {
     padding: 0 20px 0 0;
     position: relative;
+
     @include desktop {
       text-align: center;
       margin-bottom: 60px;
@@ -46,6 +49,7 @@
         width: 100%;
         position: relative;
       }
+
       @include desktop {
         display: none;
       }
@@ -55,6 +59,7 @@
       position: relative;
       display: block;
       margin: 0 0 20px 30px;
+
       @include desktop {
         display: inline-block;
       }
@@ -68,6 +73,7 @@
     margin-left: auto;
     border-radius: 20px;
     position: relative;
+
     @include desktop {
       width: 100%;
     }
@@ -79,7 +85,7 @@
       transform: translateX(-50%);
       z-index: -1;
       height: 150px;
-      animation: move_left 5s infinite linear;
+      animation: move-left 5s infinite linear;
       img {
         height: 100%;
         width: 100%;
@@ -95,6 +101,7 @@
       left: 0;
       transform: translateX(-50%);
       transition: all 0.3s ease;
+
       @include desktop {
         bottom: -40px;
         left: 50%;
@@ -163,7 +170,7 @@
   }
 }
 
-@keyframes move_left {
+@keyframes move-left {
   0% {
     transform: translateX(-50%);
   }
@@ -172,7 +179,7 @@
   }
 }
 
-@keyframes move_top {
+@keyframes move-top {
   0%,
   100% {
     transform: translateY(0);

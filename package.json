@@ -3,7 +3,7 @@
   "description": "Corporio Hugo Theme",
   "version": "1.5.8",
   "engines": {
-    "node": "^22.12.0"
+    "node": "^22.0.0"
   },
   "browserslist": [
     "defaults"
@@ -44,6 +44,7 @@
     "playwright:install": "pnpm exec playwright install chromium",
     "env": "env",
     "precheck": "pnpm version",
+    "format": "pnpm exec prettier --write . --ignore-unknown",
     "check": "exec-bin node_modules/.bin/hugo/hugo version",
     "latest:hugo": "gh release view --repo gohugoio/hugo",
     "latest:hyas": "gh release view --repo h-enk/hyas",
@@ -90,7 +91,6 @@
     "purgecss-whitelister": "^2.4.0",
     "shx": "^0.3.4",
     "stylelint": "^16.6.1",
-    "stylelint-config-prettier": "^9.0.5",
     "stylelint-config-standard-scss": "^13.1.0"
   }
 }

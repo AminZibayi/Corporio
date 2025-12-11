@@ -2,6 +2,7 @@
   background: #f1f6f9;
   position: relative;
   padding: 170px 0 150px;
+
   @include desktop {
     padding: 100px 0;
   }
@@ -17,6 +18,7 @@
         fill: $white;
       }
     }
+
     @include mobile-xs {
       display: none;
     }
@@ -27,6 +29,7 @@
       border-radius: 20px;
       padding: 60px 50px;
       margin: 30px 25px 60px;
+
       @include tablet {
         margin: 30px 0 40px;
         padding: 50px 30px;

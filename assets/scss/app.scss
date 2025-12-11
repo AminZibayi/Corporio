@@ -6,15 +6,14 @@
 
 // TODO: Use SVG icons instead of web fonts to reduce page size
 $fa-font-path: "font-awesome/fonts";
-@import "font-awesome/scss/font-awesome";
 
+@import "font-awesome/scss/font-awesome";
 @import "variables";
 @import "bootstrap/scss/bootstrap";
 @import "typography";
 @import "mixins";
 @import "buttons";
 @import "common";
-
 @import "components/alerts";
 @import "components/preloder";
 @import "components/navbar";
