@@ -157,7 +157,23 @@ If you don’t need Tina integration, you can use the command `pnpm build`. This
 
 ## Other commands
 
-_TODO_
+Here are some other useful commands for development and maintenance:
+
+- `pnpm create <path/to/content>`: Create a new content file (e.g., `pnpm create blog/my-new-post.md`).
+- `pnpm start:lan`: Start the development server accessible from other devices on your local network.
+- `pnpm forestry`: Start the Hugo development server with settings optimized for Forestry CMS.
+- `pnpm tina:dev`: Start TinaCMS in development mode alongside the Hugo development server.
+- `pnpm tina:build`: Build the site for production with TinaCMS.
+- `pnpm build:lan`: Build the site for production using a LAN-specific base URL.
+- `pnpm build:preview`: Build a preview version of the site (including drafts and future content).
+- `pnpm clean`: Removes the `public` and `resources` directories.
+- `pnpm clean:install`: Removes `pnpm-lock.yaml` and `node_modules` for a clean reinstallation.
+- `pnpm lint`: Runs all linting checks (scripts, styles, markdown).
+- `pnpm lint:markdown-fix`: Automatically fixes markdown linting issues.
+- `pnpm format`: Formats all code according to project standards.
+- `pnpm test:e2e`: Runs end-to-end tests using Playwright.
+- `pnpm check`: Displays the installed Hugo version.
+- `pnpm version`: Generates a changelog and updates the project version.
 
 ## Documentation
 
