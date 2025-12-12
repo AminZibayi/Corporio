@@ -120,9 +120,6 @@ importers:
       stylelint:
         specifier: ^16.6.1
         version: 16.26.1(typescript@5.9.3)
-      stylelint-config-prettier:
-        specifier: ^9.0.5
-        version: 9.0.5(stylelint@16.26.1(typescript@5.9.3))
       stylelint-config-standard-scss:
         specifier: ^13.1.0
         version: 13.1.0(postcss@8.5.6)(stylelint@16.26.1(typescript@5.9.3))
@@ -5978,13 +5975,6 @@ packages:
 
   style-value-types@5.0.0:
     resolution: {integrity: sha512-08yq36Ikn4kx4YU6RD7jWEv27v4V+PUsOGa4n/as8Et3CuODMJQ00ENeAVXAeydX4Z2j1XHZF1K2sX4mGl18fA==}
-
-  stylelint-config-prettier@9.0.5:
-    resolution: {integrity: sha512-U44lELgLZhbAD/xy/vncZ2Pq8sh2TnpiPvo38Ifg9+zeioR+LAkHu0i6YORIOxFafZoVg0xqQwex6e6F25S5XA==}
-    engines: {node: '>= 12'}
-    hasBin: true
-    peerDependencies:
-      stylelint: '>= 11.x < 15'
 
   stylelint-config-recommended-scss@14.1.0:
     resolution: {integrity: sha512-bhaMhh1u5dQqSsf6ri2GVWWQW5iUjBYgcHkh7SgDDn92ijoItC/cfO/W+fpXshgTQWhwFkP1rVcewcv4jaftRg==}
@@ -13396,10 +13386,6 @@ snapshots:
     dependencies:
       hey-listen: 1.0.8
       tslib: 2.8.1
-
-  stylelint-config-prettier@9.0.5(stylelint@16.26.1(typescript@5.9.3)):
-    dependencies:
-      stylelint: 16.26.1(typescript@5.9.3)
 
   stylelint-config-recommended-scss@14.1.0(postcss@8.5.6)(stylelint@16.26.1(typescript@5.9.3)):
     dependencies:
