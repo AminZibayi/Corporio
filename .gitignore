@@ -81,6 +81,7 @@ $RECYCLE.BIN/
 resources/
 public/
 .hugo_build.lock
+hugo_stats.json
 
 ############################
 # Misc.
