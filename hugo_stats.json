@@ -165,6 +165,7 @@
       "fixed-top",
       "flex-nowrap",
       "footer",
+      "footer--no-cta",
       "footer__background_shape",
       "footer__cta",
       "footer__cta_action",
