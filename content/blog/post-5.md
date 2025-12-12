@@ -7,19 +7,19 @@ tags: website
 categories: blog
 ---
 
-# Health Benefits of Nut Consumption
+## Health Benefits of Nut Consumption
 
 This is a short example post about the benefits of eating nuts.
 
 Eating nuts in moderation can offer important health benefits, including healthy fats, protein, and key micronutrients.
 
-## Key Benefits
+### Key Benefits
 
 - Rich source of healthy fats
 - Protein and fiber
 - Contains vitamins and minerals
 
-## Quick Recipe
+### Quick Recipe
 
 ```js
 const peanutButterToast = "bread" + " + peanut butter";
@@ -30,7 +30,7 @@ For more information, check the health and nutrition resources.
 
 \*[HTML]: Hyper Text Markup Language
 
-### [Custom containers](https://github.com/markdown-it/markdown-it-container)
+#### [Custom containers](https://github.com/markdown-it/markdown-it-container)
 
 ::: warning
 _here be dragons_
