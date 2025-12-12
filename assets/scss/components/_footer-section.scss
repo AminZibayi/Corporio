@@ -14,6 +14,7 @@
         fill: $white;
       }
     }
+
     @include mobile {
       display: none;
     }
@@ -35,7 +36,7 @@
       transform: rotate(-20deg);
       top: -43%;
       left: 2%;
-      animation: moveLeft 5s infinite linear;
+      animation: move-left 5s infinite linear;
       svg {
         path {
           fill: #fff;
@@ -51,7 +52,7 @@
       right: -9%;
       width: 235px;
       height: 208px;
-      animation: move_top 3s infinite linear;
+      animation: move-top 3s infinite linear;
       svg {
         height: 100%;
         width: 100%;
@@ -61,11 +62,13 @@
         }
       }
     }
+
     @include desktop {
       padding: 70px 40px;
     }
     &_content {
       width: 60%;
+
       @include desktop {
         width: 100%;
         text-align: center;
@@ -77,6 +80,7 @@
         line-height: 1;
         margin: 0 0 20px 40px;
         position: relative;
+
         @include desktop {
           display: inline-block;
         }
@@ -94,12 +98,14 @@
     }
     &_action {
       width: 40%;
+
       @include desktop {
         width: 100%;
         text-align: center;
       }
       a {
         float: right;
+
         @include desktop {
           float: none;
         }
@@ -108,12 +114,13 @@
   }
   &__widget {
     padding: 100px 0;
+
     @include desktop {
       text-align: center;
       padding: 50px 0;
       .footer__widget_address {
         ul {
-          margin-right: 2.14285714em; // match fa-lu margin
+          margin-right: 2.1429em; // match fa-lu margin
         }
       }
     }
@@ -121,12 +128,14 @@
   &__footer {
     padding: 50px 0;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
+
     @include desktop {
       text-align: center;
     }
     &_social {
       ul {
         float: right;
+
         @include desktop {
           margin: 20px auto 0;
           float: none;
@@ -135,15 +144,14 @@
     }
   }
 }
-@keyframes moveLeft {
+
+@keyframes move-left {
   0%,
   100% {
-    transform: translateX(0) rotate(-20deg);
     transform: translateX(0) rotate(-20deg);
   }
 
   50% {
-    transform: translateX(15px) rotate(-20deg);
     transform: translateX(15px) rotate(-20deg);
   }
 }

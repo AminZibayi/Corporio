@@ -1,4 +1,4 @@
-titleSeparator: '-'
+titleSeparator: "-"
 titleAddition: Nuts and Dried Food
 description: >-
   Healthy Food, Healthy Life, The premium quality and tasty dried fruits and
@@ -7,14 +7,14 @@ images:
   - favicon.ico
 ogLocale: en_US
 titleHome: Helmani Food
-twitterSite: '@gethyas'
-twitterCreator: '@henkverlinde'
+twitterSite: "@gethyas"
+twitterCreator: "@henkverlinde"
 schemaType: Organization
 schemaName: Hyas
 schemaAuthor: Henk Verlinde
-schemaAuthorTwitter: 'https://twitter.com/henkverlinde'
-schemaAuthorLinkedIn: 'https://www.linkedin.com/in/henkverlinde/'
-schemaAuthorGitHub: 'https://github.com/h-enk'
+schemaAuthorTwitter: "https://twitter.com/henkverlinde"
+schemaAuthorLinkedIn: "https://www.linkedin.com/in/henkverlinde/"
+schemaAuthorGitHub: "https://github.com/h-enk"
 schemaLocale: en-US
 schemaLogo: logo-hyas.png
 schemaLogoWidth: 512
@@ -22,10 +22,10 @@ schemaLogoHeight: 512
 schemaImage: hyas.png
 schemaImageWidth: 1280
 schemaImageHeight: 640
-schemaTwitter: 'https://twitter.com/gethyas'
-schemaLinkedIn: ''
-schemaGitHub: 'https://github.com/h-enk/hyas'
-themeColor: '#3ac58d'
+schemaTwitter: "https://twitter.com/gethyas"
+schemaLinkedIn: ""
+schemaGitHub: "https://github.com/h-enk/hyas"
+themeColor: "#3ac58d"
 landscapePhotoWidths:
   - 900
   - 800
@@ -38,16 +38,16 @@ portraitPhotoWidths:
   - 600
   - 500
 lqipWidth: 20x
-smallLimit: '320'
+smallLimit: "320"
 imageResponsive: true
 imageConvertTo: webp
 imageImageSizes:
-  - '480'
-  - '720'
-  - '1080'
-  - '1280'
-  - '1600'
-  - '2048'
+  - "480"
+  - "720"
+  - "1080"
+  - "1280"
+  - "1600"
+  - "2048"
 singleSize: false
 imageAddClass: img-fluid lazyload blur-up
 defaultImage: default-image.png
@@ -66,30 +66,30 @@ footerContact:
   topTitle: Let's Start
   title: The Start of a Dream
   button: Get in Touch
-fabformURL: 'https://fabform.io/f/JpTXRUa'
+fabformURL: "https://fabform.io/f/JpTXRUa"
 googleAnalytics: YOUR GOOGLE ANALYTICS CODE
 logo: images/site-navigation/logo.png
 address:
-  address: '20 Piroozi, Sattar Khan, Tehran.'
+  address: "20 Piroozi, Sattar Khan, Tehran."
   email: info@helmani.com
   openingHours: Open from 10am to 6pm (close at 5pm Sundays)
   phone: (+98) 911 86 2774
 map:
   APIkey: YOUR GOOGLE MAP API
-  latitude: '23.7783741'
-  longitude: '90.3746808'
+  latitude: "23.7783741"
+  longitude: "90.3746808"
   pinImage: images/pin.png
 social:
   - icon: fa-facebook-official
-    url: 'https://www.facebook.com/'
+    url: "https://www.facebook.com/"
     weight: 1
   - icon: fa-linkedin-square
-    url: 'https://www.linkedin.com/'
+    url: "https://www.linkedin.com/"
     weight: 2
   - icon: fa-pinterest-square
-    url: 'https://www.pinterest.com/'
+    url: "https://www.pinterest.com/"
     weight: 3
   - icon: fa-twitter-square
-    url: 'https://twitter.com/'
+    url: "https://twitter.com/"
     weight: 4
 _template: parameters_template

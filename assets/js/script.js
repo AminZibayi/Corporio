@@ -9,7 +9,7 @@
 import "./vendor/slick-animation";
 import "waypoints/lib/jquery.waypoints";
 // TODO: this module is deprecated, use newer alternatives
-import { TweenMax, Power3 } from "gsap/TweenMax";
+import { TweenMax, Power3, TimelineMax } from "gsap/TweenMax";
 // TODO: remove this module and use lazysizes instead
 import "imagesloaded";
 
@@ -25,8 +25,7 @@ function PageLoad() {
     ease: Power3.easeOut,
   });
 
-  var width = 100,
-    perfData = window.performance.timing,
+  var perfData = window.performance.timing,
     EstimatedTime = -(perfData.loadEventEnd - perfData.navigationStart),
     time = parseInt((EstimatedTime / 500) % 50) * 70;
 
@@ -437,7 +436,7 @@ function initialize() {
   //CREATE A CUSTOM PIN ICON
   var marker_image = $("#map").data("pin");
   var pinIcon = new google.maps.MarkerImage(marker_image, null, null, null, new google.maps.Size(25, 34));
-  marker = new google.maps.Marker({
+  window.marker = new google.maps.Marker({
     position: mapCenter,
     map: map,
     icon: pinIcon,

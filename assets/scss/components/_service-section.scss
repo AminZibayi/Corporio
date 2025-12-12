@@ -22,6 +22,7 @@
     svg {
       width: 100%;
     }
+
     @include desktop {
       display: none;
     }
@@ -30,7 +31,8 @@
     position: absolute;
     bottom: 4%;
     left: 6%;
-    animation: move_top 5s infinite linear;
+    animation: move-top 5s infinite linear;
+
     @include desktop {
       display: none;
     }
