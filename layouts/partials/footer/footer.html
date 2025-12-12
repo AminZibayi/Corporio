@@ -1,12 +1,13 @@
 <!-- In the Name of Allah, the Merciful the Compassionate -->
 
-<footer class="footer" id="contact">
+<footer class="footer {{ if eq .Kind "404" }}footer--no-cta{{ end }}" id="contact">
   <div class="footer__background_shape">
     <svg viewBox="0 0 1920 79">
       <path d="M0 0h1920v79L0 0z" data-name="Path 1450" />
     </svg>
   </div>
   <div class="container">
+    {{ if ne .Kind "404" }}
     <div class="row">
       <div class="col-lg-12">
         <div class="footer__cta">
@@ -37,6 +38,7 @@
         </div>
       </div>
     </div>
+    {{ end }}
     <div class="row footer__widget">
       <div class="col-lg-4">
         <div class="footer__widget_logo mb-5">

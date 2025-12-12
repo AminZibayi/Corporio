@@ -2,6 +2,12 @@
   background: #1b2031;
   position: relative;
   margin-top: 150px;
+
+  // Reduce margin when CTA is not present (e.g., 404 page)
+  &--no-cta {
+    margin-top: 50px;
+  }
+
   &__background_shape {
     position: absolute;
     width: 100%;

@@ -59,6 +59,7 @@
     "jquery": "^3.7.1",
     "lazysizes": "^5.3.2",
     "magnific-popup": "github:dimsemenov/Magnific-Popup",
+    "popper.js": "^1.16.1",
     "quicklink": "^2.3.0",
     "slick-carousel": "^1.8.1",
     "tinacms": "^2.2.0",

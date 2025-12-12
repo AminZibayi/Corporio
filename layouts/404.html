@@ -1,10 +1,43 @@
 {{ define "main" }}
-  <div class="row justify-content-center">
-    <div class="col-lg-7">
-      <article>
-        <h1>Page not found :(</h1>
-        <p>The page you are looking for doesn't exist or has been moved.</p>
-      </article>
+  <section class="error-page">
+    <div class="error-page__background">
+      <svg viewBox="0 0 1437 1180" aria-hidden="true">
+        <path fill="#f1f6f9" d="M0 0h1377l60 1010a120 120 0 01-120 120L0 1180z" data-name="Path 1350" />
+      </svg>
     </div>
-  </div>
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-lg-8 text-center">
+          <div class="error-page__content">
+            <div class="error-page__number">
+              <span class="error-digit">4</span>
+              <span class="error-digit-middle">
+                <svg viewBox="0 0 200 200" class="error-icon" aria-hidden="true">
+                  <circle cx="100" cy="100" r="80" fill="none" stroke="currentColor" stroke-width="8"/>
+                  <path d="M70 70 L130 130 M130 70 L70 130" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
+                </svg>
+              </span>
+              <span class="error-digit">4</span>
+            </div>
+            <h1 class="error-page__title">Oops! Page Not Found</h1>
+            <p class="error-page__description">
+              The page you are looking for might have been removed, had its name changed, 
+              or is temporarily unavailable.
+            </p>
+            <div class="error-page__actions">
+              <a href="{{ "/" | absURL }}" class="btn btn-primary btn-lg btn-zoom">
+                <i class="fa fa-home"></i> Back to Home
+              </a>
+              <a href="{{ "/#contact" | absURL }}" class="btn btn-outline-primary btn-lg btn-zoom">
+                <i class="fa fa-envelope"></i> Contact Us
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="error-page__decoration" aria-hidden="true">
+      <img src="/images/hero/figure-svg.svg" alt="" />
+    </div>
+  </section>
 {{ end }}
