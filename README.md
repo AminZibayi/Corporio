@@ -161,7 +161,7 @@ _TODO_
 
 ## Documentation
 
-_TODO_
+For comprehensive documentation on configuration, content management, theming, and deployment, please refer to the [full documentation](./docs/README.md).
 
 ## Contributing
 
