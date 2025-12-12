@@ -1,4 +1,4 @@
-baseURL: 'https://corporio.onrender.com/'
+baseURL: "https://corporio.onrender.com/"
 languageCode: en-us
 disableAliases: true
 disableHugoGeneratorInject: false
@@ -17,8 +17,8 @@ outputs:
 mediaTypes:
   text/netlify:
     suffixes:
-      - ''
-    delimiter: ''
+      - ""
+    delimiter: ""
 outputFormats:
   REDIRECTS:
     mediatype: text/netlify
@@ -32,14 +32,14 @@ outputFormats:
     notAlternative: true
 caches:
   getjson:
-    dir: ':cacheDir/:project'
+    dir: ":cacheDir/:project"
     maxAge: 10s
 sitemap:
   changefreq: weekly
   filename: sitemap.xml
   priority: 0.5
 permalinks:
-  blog: 'blog/:title/'
+  blog: "blog/:title/"
 minify:
   tdewolff:
     html:

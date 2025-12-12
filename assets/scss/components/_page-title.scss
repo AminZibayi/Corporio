@@ -5,7 +5,8 @@
     position: absolute;
     bottom: -35%;
     left: -7%;
-    animation: move_top 5s infinite linear;
+    animation: move-top 5s infinite linear;
+
     @include desktop {
       display: none;
     }
@@ -19,6 +20,7 @@
     svg {
       width: 100%;
     }
+
     @include desktop {
       display: none;
     }
@@ -29,15 +31,17 @@
     right: 10%;
     height: 100px;
     width: 100px;
-    animation: move_top 3s infinite linear;
+    animation: move-top 3s infinite linear;
     img {
       height: 100%;
       width: 100%;
     }
+
     @include desktop {
       display: none;
     }
   }
+
   @include desktop {
     padding: 120px 0 0;
   }

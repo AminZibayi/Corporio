@@ -12,6 +12,7 @@
       height: 100%;
       width: 100%;
     }
+
     @include desktop {
       display: none;
     }
@@ -25,6 +26,7 @@
       bottom: 0;
       right: 0;
       display: inline-block;
+
       @include desktop {
         position: relative;
         margin-top: 30px;
@@ -34,6 +36,7 @@
   &__item {
     position: relative;
     margin-bottom: 20px;
+
     @include desktop {
       margin-bottom: 130px;
     }
@@ -42,6 +45,7 @@
       height: 100%;
       overflow: hidden;
       border-radius: 20px;
+
       @include desktop {
         width: 80%;
         margin: 0 auto;
@@ -59,6 +63,7 @@
       padding: 30px;
       border-radius: 20px;
       box-shadow: 0 20px 40px 0 rgba(50, 65, 141, 0.12);
+
       @include desktop {
         left: 0;
       }
@@ -89,6 +94,7 @@
   .mobile {
     display: none;
   }
+
   @include desktop {
     .desktop {
       display: none;
@@ -99,6 +105,7 @@
     }
   }
 }
+
 @keyframes rotate {
   from {
     transform: rotate(0deg);

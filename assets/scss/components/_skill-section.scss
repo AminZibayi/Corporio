@@ -1,6 +1,7 @@
 .skill {
   position: relative;
   padding: 100px 0 150px;
+
   @include desktop {
     padding: 100px 0;
   }
@@ -13,6 +14,7 @@
     svg {
       width: 100%;
     }
+
     @include desktop {
       display: none;
     }
@@ -23,17 +25,19 @@
     right: 10%;
     height: 100px;
     width: 100px;
-    animation: move_top 3s infinite linear;
+    animation: move-top 3s infinite linear;
     img {
       height: 100%;
       width: 100%;
     }
+
     @include desktop {
       display: none;
     }
   }
   &__thumb {
     position: relative;
+
     @include tablet {
       margin-bottom: 30px;
     }
@@ -43,7 +47,7 @@
       left: -17%;
       z-index: -1;
       height: 150px;
-      animation: move_top 4s infinite linear;
+      animation: move-top 4s infinite linear;
       img {
         height: 100%;
         width: 100%;
@@ -51,6 +55,7 @@
     }
     &_image {
       margin-right: 7%;
+
       @include desktop {
         margin-right: 0;
       }
@@ -62,6 +67,7 @@
   }
   &__progress {
     margin-left: 40px;
+
     @include desktop {
       margin-left: 0;
       margin-top: 30px;
@@ -88,6 +94,7 @@
     }
   }
 }
+
 @keyframes animate-positive {
   0% {
     width: 0;
