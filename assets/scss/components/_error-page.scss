@@ -48,7 +48,7 @@
     color: $primary;
     font-family: $headings-font-family;
     line-height: 1;
-    text-shadow: 3px 3px 0px rgba(40, 47, 73, 0.1);
+    text-shadow: 3px 3px 0px rgba($secondary, 0.1);
     animation: bounce 2s infinite;
 
     @include tablet {
