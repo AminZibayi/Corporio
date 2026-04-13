@@ -54,7 +54,7 @@
   "dependencies": {
     "@hyas/images": "^0.2.3",
     "bootstrap": "^4.6.2",
-    "gsap": "1.20.5",
+    "gsap": "1.20.6",
     "imagesloaded": "^5.0.0",
     "jquery": "^3.7.1",
     "lazysizes": "^5.3.2",
