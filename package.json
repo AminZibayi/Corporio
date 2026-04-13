@@ -72,7 +72,7 @@
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
     "@fullhuman/postcss-purgecss": "^6.0.0",
-    "@playwright/test": "^1.50.1",
+    "@playwright/test": "^1.59.1",
     "@tinacms/cli": "^2.0.3",
     "auto-changelog": "^2.5.0",
     "autoprefixer": "^10.4.22",
